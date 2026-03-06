@@ -1,202 +1,170 @@
 #!/usr/bin/env python3
-"""Fetches GymBox class schedule data and writes it to gymbox-schedule.json.
+"""Fetch the full GymBox class schedule across all locations and save as JSON.
 
-The script expects the GymBox public API to expose:
-- a clubs endpoint returning a list of clubs/locations
-- a classes endpoint returning class sessions for a date range and club
-
-Environment variables allow endpoint overrides if GymBox updates their API paths.
+Uses the public Magicline / UGG APIs (no authentication required):
+  - Studios: https://ugg.api.magicline.com/connect/v2/studio?tag=...
+  - Schedule: https://prod.ugg.globaldelivery.nl/api/frontend/class_schedule
 """
 
-from __future__ import annotations
-
 import json
-import os
+import math
+import sys
 from datetime import datetime, timedelta, timezone
-from pathlib import Path
-from typing import Any
-from urllib.error import HTTPError, URLError
-from urllib.parse import urlencode
-from urllib.request import Request, urlopen
 
-API_BASE = os.getenv("GYMBOX_API_BASE", "https://ugg.api.magicline.com/connect/v2")
-STUDIOS_PATH = os.getenv("GYMBOX_STUDIOS_PATH", "/studio")
-API_BASE = os.getenv("GYMBOX_API_BASE", "https://www.gymbox.com/api")
-CLUBS_PATH = os.getenv("GYMBOX_CLUBS_PATH", "/clubs")
-CLASSES_PATH = os.getenv("GYMBOX_CLASSES_PATH", "/classes")
-LOOKAHEAD_DAYS = int(os.getenv("GYMBOX_LOOKAHEAD_DAYS", "14"))
-BOOKABLE_OPEN_OFFSET_HOURS = 74
-BOOKABLE_CLOSE_OFFSET_HOURS = 2
-OUTPUT_PATH = Path("gymbox-schedule.json")
-LANGUAGE = os.getenv("GYMBOX_ACCEPT_LANGUAGE", "en-GB")
+import requests
+
+STUDIOS_URL = "https://ugg.api.magicline.com/connect/v2/studio"
+STUDIOS_TAG = "BRANDEDAPPGBDONOTDELETE-0001"
+
+SCHEDULE_URL = "https://prod.ugg.globaldelivery.nl/api/frontend/class_schedule"
+SCHEDULE_MAX_DAYS = 3  # API enforces a max 3-day window per request
+
+BOOKING_WINDOW_HOURS = 74  # Classes bookable from 74h before start (3 days + 2 hours)
+
+OUTPUT_FILE = "gymbox-schedule.json"
 
 
-def _api_get(path: str, params: dict[str, Any] | None = None) -> tuple[int, Any]:
+def get_gymbox_studios() -> list[dict]:
+    """Fetch all GymBox studios, filtering out HQ/non-gym entries."""
+    resp = requests.get(STUDIOS_URL, params={"tag": STUDIOS_TAG})
+    resp.raise_for_status()
+    studios = resp.json()
 
-
-def _api_get(path: str, params: dict[str, Any] | None = None) -> Any:
-    query = f"?{urlencode(params)}" if params else ""
-    url = f"{API_BASE.rstrip('/')}/{path.strip('/')}" + query
-    req = Request(
-        url,
-        headers={
-            "Accept": "application/json",
-            "Content-Type": "application/json",
-            "Accept-Language": LANGUAGE,
-            "User-Agent": "GBScheduleBot/1.0 (+https://github.com/actions)",
-        },
-    )
-
-    try:
-        with urlopen(req, timeout=30) as response:
-            return response.status, json.loads(response.read().decode("utf-8"))
-    except HTTPError as err:
-        return err.code, None
-            return json.loads(response.read().decode("utf-8"))
-    except HTTPError as err:
-        raise RuntimeError(f"GymBox API request failed ({err.code}) for {url}") from err
-    except URLError as err:
-        raise RuntimeError(f"GymBox API unreachable for {url}: {err.reason}") from err
-
-
-def _coerce_list(payload: Any) -> list[dict[str, Any]]:
-    if isinstance(payload, list):
-        return [item for item in payload if isinstance(item, dict)]
-    if isinstance(payload, dict):
-        for key in ("data", "results", "items", "studios", "classes", "sessions", "appointments", "courses"):
-        for key in ("data", "results", "items", "clubs", "classes", "sessions"):
-            value = payload.get(key)
-            if isinstance(value, list):
-                return [item for item in value if isinstance(item, dict)]
-    return []
-
-
-def _parse_iso(value: str) -> datetime:
-    if value.endswith("Z"):
-        value = value.replace("Z", "+00:00")
-    dt = datetime.fromisoformat(value)
-    return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt.astimezone(timezone.utc)
-
-
-def _find_start_time(session: dict[str, Any]) -> datetime:
-    for key in ("start", "startTime", "startDate", "startAt", "date", "dateTime", "begin"):
-    if dt.tzinfo is None:
-        return dt.replace(tzinfo=timezone.utc)
-    return dt.astimezone(timezone.utc)
-
-
-def _find_start_time(session: dict[str, Any]) -> datetime:
-    for key in ("start", "startTime", "startDate", "startAt", "datetime"):
-        value = session.get(key)
-        if isinstance(value, str):
-            return _parse_iso(value)
-    raise ValueError("Class session is missing a parseable start datetime field")
-
-
-def _normalise_session(session: dict[str, Any], location_name: str, location_id: str) -> dict[str, Any]:
-    start_at = _find_start_time(session)
-    bookable_from = start_at - timedelta(hours=BOOKABLE_OPEN_OFFSET_HOURS)
-    bookable_until = start_at - timedelta(hours=BOOKABLE_CLOSE_OFFSET_HOURS)
-
-    return {
-        **session,
-        "locationId": session.get("locationId") or location_id,
-        "locationName": session.get("locationName") or location_name,
-        "bookableFrom": bookable_from.isoformat().replace("+00:00", "Z"),
-        "bookableUntil": bookable_until.isoformat().replace("+00:00", "Z"),
-        "bookingWindowHours": BOOKABLE_OPEN_OFFSET_HOURS,
-    }
-
-
-def _fetch_sessions_for_studio(studio_id: str, start_iso: str, end_iso: str) -> list[dict[str, Any]]:
-    # Gymbox uses Magicline Connect. Different tenants expose slightly different route names;
-    # try the known schedule endpoints used by this API family.
-    candidate_requests = [
-        (f"/studio/{studio_id}/class", {"from": start_iso, "to": end_iso}),
-        (f"/studio/{studio_id}/classes", {"from": start_iso, "to": end_iso}),
-        (f"/studio/{studio_id}/course", {"from": start_iso, "to": end_iso}),
-        (f"/studio/{studio_id}/courses", {"from": start_iso, "to": end_iso}),
-        (f"/studio/{studio_id}/appointments", {"startDate": start_iso, "endDate": end_iso}),
-        (f"/studio/{studio_id}/appointment", {"startDate": start_iso, "endDate": end_iso}),
-        (f"/studio/{studio_id}/calendar", {"from": start_iso, "to": end_iso}),
+    # Keep only actual gym locations (exclude HQ which has no classes)
+    gym_studios = [
+        s for s in studios
+        if "gymbox" in s.get("studioName", "").lower()
+        and "hq" not in s.get("studioName", "").lower()
     ]
 
-    for path, params in candidate_requests:
-        status, payload = _api_get(path, params=params)
-        if status == 200:
-            sessions = _coerce_list(payload)
-            if sessions:
-                return sessions
-    return []
+    print(f"Found {len(gym_studios)} GymBox studios (of {len(studios)} total)")
+    return gym_studios
+
+
+def fetch_schedule(venue_id: int, start_date: str, end_date: str) -> list[dict]:
+    """Fetch class schedule for a single venue and date range."""
+    resp = requests.get(SCHEDULE_URL, params={
+        "venue_id": venue_id,
+        "start_date": start_date,
+        "end_date": end_date,
+    })
+    resp.raise_for_status()
+    return resp.json().get("class_schedules", [])
+
+
+def fetch_full_schedule(venue_id: int, start_date: datetime, end_date: datetime) -> list[dict]:
+    """Fetch schedule across a date range, chunked into 3-day windows."""
+    all_classes = []
+    current = start_date
+    while current <= end_date:
+        chunk_end = min(current + timedelta(days=SCHEDULE_MAX_DAYS - 1), end_date)
+        classes = fetch_schedule(
+            venue_id,
+            current.strftime("%Y-%m-%d"),
+            chunk_end.strftime("%Y-%m-%d"),
+        )
+        all_classes.extend(classes)
+        current = chunk_end + timedelta(days=1)
+    return all_classes
+
+
+def build_schedule_entry(class_info: dict, slot: dict) -> dict:
+    """Build a single schedule entry from a class + slot pair."""
+    booked = slot.get("bookedParticipants", 0)
+    capacity = slot.get("maxParticipants", 0)
+    waiting = slot.get("waitingListParticipants", 0)
+    max_waiting = slot.get("maxWaitingListParticipants", 0)
+
+    if capacity > 0 and booked >= capacity:
+        if max_waiting > 0 and waiting < max_waiting:
+            availability = "waitlist"
+        else:
+            availability = "full"
+    else:
+        availability = "available"
+
+    instructors = [i.get("publicName") or f"{i.get('firstName', '')} {i.get('lastName', '')}".strip()
+                   for i in slot.get("instructors", [])]
+
+    return {
+        "slotId": slot.get("id"),
+        "classId": class_info.get("id"),
+        "className": class_info.get("title"),
+        "category": class_info.get("category"),
+        "description": class_info.get("description"),
+        "duration": class_info.get("duration"),
+        "startDateTime": slot.get("startDateTime"),
+        "endDateTime": slot.get("endDateTime"),
+        "location": slot.get("location", {}).get("name"),
+        "locationId": slot.get("location", {}).get("id"),
+        "instructors": instructors,
+        "capacity": capacity,
+        "booked": booked,
+        "spotsLeft": max(0, capacity - booked),
+        "waitingList": waiting,
+        "maxWaitingList": max_waiting,
+        "availability": availability,
+        "bookableFrom": slot.get("earliestBookingDateTime"),
+        "bookableUntil": slot.get("latestBookingDateTime"),
+    }
 
 
 def main() -> None:
-    fetched_at = datetime.now(timezone.utc)
-    range_start = fetched_at
-    range_end = fetched_at + timedelta(days=LOOKAHEAD_DAYS)
-    start_iso = range_start.isoformat().replace("+00:00", "Z")
-    end_iso = range_end.isoformat().replace("+00:00", "Z")
+    now = datetime.now(timezone.utc)
+    start_date = now
+    # Fetch 7 days ahead (the practical booking window)
+    end_date = now + timedelta(days=6)
 
-    status, studios_payload = _api_get(STUDIOS_PATH)
-    if status != 200:
-        raise RuntimeError(f"Failed to fetch studios from {API_BASE}{STUDIOS_PATH} (status {status})")
+    studios = get_gymbox_studios()
 
-    studios = [s for s in _coerce_list(studios_payload) if "gymbox" in str(s.get("studioName", "")).lower()]
-    if not studios:
-        raise RuntimeError("No Gymbox studios returned from Magicline Connect endpoint.")
-
-    clubs_payload = _api_get(CLUBS_PATH)
-    clubs = _coerce_list(clubs_payload)
-    if not clubs:
-        raise RuntimeError(
-            "No GymBox locations returned. Set GYMBOX_API_BASE/GYMBOX_CLUBS_PATH to the correct endpoint."
-        )
-
-    classes_by_location: dict[str, list[dict[str, Any]]] = {}
-    total_classes = 0
-
+    all_entries = []
     for studio in studios:
-        studio_id = str(studio.get("id") or "")
-        if not studio_id:
-            continue
+        studio_id = studio["id"]
+        studio_name = studio["studioName"]
+        print(f"  Fetching {studio_name} (id={studio_id})...")
 
-        studio_name = str(studio.get("studioName") or studio.get("name") or studio_id)
-        raw_sessions = _fetch_sessions_for_studio(studio_id, start_iso, end_iso)
-        sessions = [_normalise_session(item, studio_name, studio_id) for item in raw_sessions]
-        classes_by_location[studio_name] = sessions
-    for club in clubs:
-        club_id = str(club.get("id") or club.get("clubId") or club.get("slug") or "")
-        if not club_id:
-            continue
+        try:
+            class_schedules = fetch_full_schedule(studio_id, start_date, end_date)
+            count = 0
+            for cs in class_schedules:
+                class_info = cs.get("class", {})
+                for slot in cs.get("slots", []):
+                    all_entries.append(build_schedule_entry(class_info, slot))
+                    count += 1
+            print(f"    -> {count} class slots")
+        except Exception as e:
+            print(f"    -> Failed: {e}", file=sys.stderr)
 
-        club_name = str(club.get("name") or club.get("title") or club_id)
-        classes_payload = _api_get(
-            CLASSES_PATH,
-            params={
-                "clubId": club_id,
-                "from": range_start.isoformat().replace("+00:00", "Z"),
-                "to": range_end.isoformat().replace("+00:00", "Z"),
-            },
-        )
-        raw_sessions = _coerce_list(classes_payload)
-        sessions = [_normalise_session(item, club_name, club_id) for item in raw_sessions]
-        classes_by_location[club_name] = sessions
-        total_classes += len(sessions)
+    # Group by date
+    schedule_by_date: dict[str, list[dict]] = {}
+    for entry in all_entries:
+        date = entry["startDateTime"][:10] if entry.get("startDateTime") else "unknown"
+        schedule_by_date.setdefault(date, []).append(entry)
+
+    # Sort each day by location then time
+    for date in schedule_by_date:
+        schedule_by_date[date].sort(key=lambda c: (c.get("location", ""), c.get("startDateTime", "")))
+
+    sorted_schedule = dict(sorted(schedule_by_date.items()))
 
     output = {
-        "fetchedAt": fetched_at.isoformat().replace("+00:00", "Z"),
-        "lookaheadDays": LOOKAHEAD_DAYS,
-        "bookingWindow": {
-            "opensHoursBeforeClass": BOOKABLE_OPEN_OFFSET_HOURS,
-            "closesHoursBeforeClass": BOOKABLE_CLOSE_OFFSET_HOURS,
+        "fetchedAt": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "bookingWindowHours": BOOKING_WINDOW_HOURS,
+        "dateRange": {
+            "start": start_date.strftime("%Y-%m-%d"),
+            "end": end_date.strftime("%Y-%m-%d"),
         },
-        "locationsCount": len(classes_by_location),
-        "totalClasses": total_classes,
-        "classesByLocation": classes_by_location,
+        "studios": [{"id": s["id"], "name": s["studioName"]} for s in studios],
+        "schedule": sorted_schedule,
     }
 
-    OUTPUT_PATH.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Saved schedule for {len(classes_by_location)} locations / {total_classes} classes to {OUTPUT_PATH}")
+    with open(OUTPUT_FILE, "w") as f:
+        json.dump(output, f, indent=2)
+
+    total = sum(len(v) for v in sorted_schedule.values())
+    full = sum(1 for v in sorted_schedule.values() for c in v if c["availability"] == "full")
+    print(f"\nSaved {OUTPUT_FILE}: {total} class slots across {len(studios)} studios, {len(sorted_schedule)} days")
+    print(f"  {full} fully booked, {total - full} with availability")
 
 
 if __name__ == "__main__":
