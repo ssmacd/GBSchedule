@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+"""Fetches GymBox class schedule data and writes it to gymbox-schedule.json.
+
+The script expects the GymBox public API to expose:
+- a clubs endpoint returning a list of clubs/locations
+- a classes endpoint returning class sessions for a date range and club
+
+Environment variables allow endpoint overrides if GymBox updates their API paths.
+"""
+
 from __future__ import annotations
 
 import json
@@ -12,6 +21,9 @@ from urllib.request import Request, urlopen
 
 API_BASE = os.getenv("GYMBOX_API_BASE", "https://ugg.api.magicline.com/connect/v2")
 STUDIOS_PATH = os.getenv("GYMBOX_STUDIOS_PATH", "/studio")
+API_BASE = os.getenv("GYMBOX_API_BASE", "https://www.gymbox.com/api")
+CLUBS_PATH = os.getenv("GYMBOX_CLUBS_PATH", "/clubs")
+CLASSES_PATH = os.getenv("GYMBOX_CLASSES_PATH", "/classes")
 LOOKAHEAD_DAYS = int(os.getenv("GYMBOX_LOOKAHEAD_DAYS", "14"))
 BOOKABLE_OPEN_OFFSET_HOURS = 74
 BOOKABLE_CLOSE_OFFSET_HOURS = 2
@@ -20,6 +32,9 @@ LANGUAGE = os.getenv("GYMBOX_ACCEPT_LANGUAGE", "en-GB")
 
 
 def _api_get(path: str, params: dict[str, Any] | None = None) -> tuple[int, Any]:
+
+
+def _api_get(path: str, params: dict[str, Any] | None = None) -> Any:
     query = f"?{urlencode(params)}" if params else ""
     url = f"{API_BASE.rstrip('/')}/{path.strip('/')}" + query
     req = Request(
@@ -37,6 +52,9 @@ def _api_get(path: str, params: dict[str, Any] | None = None) -> tuple[int, Any]
             return response.status, json.loads(response.read().decode("utf-8"))
     except HTTPError as err:
         return err.code, None
+            return json.loads(response.read().decode("utf-8"))
+    except HTTPError as err:
+        raise RuntimeError(f"GymBox API request failed ({err.code}) for {url}") from err
     except URLError as err:
         raise RuntimeError(f"GymBox API unreachable for {url}: {err.reason}") from err
 
@@ -46,6 +64,7 @@ def _coerce_list(payload: Any) -> list[dict[str, Any]]:
         return [item for item in payload if isinstance(item, dict)]
     if isinstance(payload, dict):
         for key in ("data", "results", "items", "studios", "classes", "sessions", "appointments", "courses"):
+        for key in ("data", "results", "items", "clubs", "classes", "sessions"):
             value = payload.get(key)
             if isinstance(value, list):
                 return [item for item in value if isinstance(item, dict)]
@@ -61,6 +80,13 @@ def _parse_iso(value: str) -> datetime:
 
 def _find_start_time(session: dict[str, Any]) -> datetime:
     for key in ("start", "startTime", "startDate", "startAt", "date", "dateTime", "begin"):
+    if dt.tzinfo is None:
+        return dt.replace(tzinfo=timezone.utc)
+    return dt.astimezone(timezone.utc)
+
+
+def _find_start_time(session: dict[str, Any]) -> datetime:
+    for key in ("start", "startTime", "startDate", "startAt", "datetime"):
         value = session.get(key)
         if isinstance(value, str):
             return _parse_iso(value)
@@ -119,6 +145,13 @@ def main() -> None:
     if not studios:
         raise RuntimeError("No Gymbox studios returned from Magicline Connect endpoint.")
 
+    clubs_payload = _api_get(CLUBS_PATH)
+    clubs = _coerce_list(clubs_payload)
+    if not clubs:
+        raise RuntimeError(
+            "No GymBox locations returned. Set GYMBOX_API_BASE/GYMBOX_CLUBS_PATH to the correct endpoint."
+        )
+
     classes_by_location: dict[str, list[dict[str, Any]]] = {}
     total_classes = 0
 
@@ -131,6 +164,23 @@ def main() -> None:
         raw_sessions = _fetch_sessions_for_studio(studio_id, start_iso, end_iso)
         sessions = [_normalise_session(item, studio_name, studio_id) for item in raw_sessions]
         classes_by_location[studio_name] = sessions
+    for club in clubs:
+        club_id = str(club.get("id") or club.get("clubId") or club.get("slug") or "")
+        if not club_id:
+            continue
+
+        club_name = str(club.get("name") or club.get("title") or club_id)
+        classes_payload = _api_get(
+            CLASSES_PATH,
+            params={
+                "clubId": club_id,
+                "from": range_start.isoformat().replace("+00:00", "Z"),
+                "to": range_end.isoformat().replace("+00:00", "Z"),
+            },
+        )
+        raw_sessions = _coerce_list(classes_payload)
+        sessions = [_normalise_session(item, club_name, club_id) for item in raw_sessions]
+        classes_by_location[club_name] = sessions
         total_classes += len(sessions)
 
     output = {

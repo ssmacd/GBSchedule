@@ -21,4 +21,7 @@ If GymBox changes API routes, set these in workflow/repo variables:
 - `GYMBOX_API_BASE` (default: `https://ugg.api.magicline.com/connect/v2`)
 - `GYMBOX_STUDIOS_PATH` (default: `/studio`)
 - `GYMBOX_ACCEPT_LANGUAGE` (default: `en-GB`)
+- `GYMBOX_API_BASE` (default: `https://www.gymbox.com/api`)
+- `GYMBOX_CLUBS_PATH` (default: `/clubs`)
+- `GYMBOX_CLASSES_PATH` (default: `/classes`)
 - `GYMBOX_LOOKAHEAD_DAYS` (default: `14`)
