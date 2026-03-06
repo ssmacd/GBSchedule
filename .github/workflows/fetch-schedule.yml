@@ -21,12 +21,9 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: pip install requests
 
       - name: Fetch GymBox class schedule
-        env:
-          GYMBOX_EMAIL: ${{ secrets.GYMBOX_EMAIL }}
-          GYMBOX_PASSWORD: ${{ secrets.GYMBOX_PASSWORD }}
         run: python3 fetch_gymbox_schedule.py
 
       - name: Commit updated schedule

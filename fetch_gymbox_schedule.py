@@ -1,212 +1,170 @@
 #!/usr/bin/env python3
-"""Fetch the full GymBox class schedule across all locations and save as JSON."""
+"""Fetch the full GymBox class schedule across all locations and save as JSON.
+
+Uses the public Magicline / UGG APIs (no authentication required):
+  - Studios: https://ugg.api.magicline.com/connect/v2/studio?tag=...
+  - Schedule: https://prod.ugg.globaldelivery.nl/api/frontend/class_schedule
+"""
 
 import json
-import os
-import re
+import math
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import requests
-from bs4 import BeautifulSoup
 
-BASE_URL = "https://gymbox.legendonlineservices.co.uk/enterprise"
-LOGIN_URL = f"{BASE_URL}/account/login"
-TIMETABLE_URL = f"{BASE_URL}/BookingsCentre/MemberTimetable"
-CLUBS_URL = f"{BASE_URL}/mobile/getfacilities"
+STUDIOS_URL = "https://ugg.api.magicline.com/connect/v2/studio"
+STUDIOS_TAG = "BRANDEDAPPGBDONOTDELETE-0001"
 
-BOOKING_WINDOW_HOURS = 74  # 3 days (72h) + 2 hours before class
+SCHEDULE_URL = "https://prod.ugg.globaldelivery.nl/api/frontend/class_schedule"
+SCHEDULE_MAX_DAYS = 3  # API enforces a max 3-day window per request
 
-SESSION = requests.Session()
-SESSION.headers.update({
-    "Accept-Language": "en-GB,en;q=0.9",
-    "DNT": "1",
-    "User-Agent": (
-        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-        "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    ),
-})
+BOOKING_WINDOW_HOURS = 74  # Classes bookable from 74h before start (3 days + 2 hours)
+
+OUTPUT_FILE = "gymbox-schedule.json"
 
 
-def login(email: str, password: str) -> None:
-    """Authenticate with GymBox using a two-step login (cookie init + credentials)."""
-    # Step 1: initialise session cookies
-    SESSION.get(LOGIN_URL)
-
-    # Step 2: submit credentials
-    resp = SESSION.post(
-        LOGIN_URL,
-        data={"login.Email": email, "login.Password": password},
-        allow_redirects=False,
-    )
-
-    if resp.status_code not in (200, 302) or (
-        resp.status_code == 200 and "Login failed" in resp.text
-    ):
-        print("Login failed", file=sys.stderr)
-        sys.exit(1)
-
-    # Follow redirect if needed
-    if resp.status_code == 302:
-        SESSION.get(resp.headers.get("Location", BASE_URL))
-
-    print("Login successful")
-
-
-def get_all_clubs() -> list[dict]:
-    """Return a list of all GymBox clubs with their Id and Name."""
-    resp = SESSION.get(CLUBS_URL)
+def get_gymbox_studios() -> list[dict]:
+    """Fetch all GymBox studios, filtering out HQ/non-gym entries."""
+    resp = requests.get(STUDIOS_URL, params={"tag": STUDIOS_TAG})
     resp.raise_for_status()
-    clubs = resp.json()
-    print(f"Found {len(clubs)} clubs")
-    return clubs
+    studios = resp.json()
+
+    # Keep only actual gym locations (exclude HQ which has no classes)
+    gym_studios = [
+        s for s in studios
+        if "gymbox" in s.get("studioName", "").lower()
+        and "hq" not in s.get("studioName", "").lower()
+    ]
+
+    print(f"Found {len(gym_studios)} GymBox studios (of {len(studios)} total)")
+    return gym_studios
 
 
-def parse_timetable(html: str, club_name: str) -> dict[str, list[dict]]:
-    """Parse the HTML timetable for a single club into a date-keyed dict."""
-    soup = BeautifulSoup(html, "html.parser")
-    table = soup.select_one("#MemberTimetable")
-    if not table:
-        print(f"  No timetable found for {club_name}")
-        return {}
-
-    schedule: dict[str, list[dict]] = {}
-    current_date = None
-
-    for row in table.find_all("tr"):
-        # Date header rows contain an h5
-        header = row.find("h5")
-        if header:
-            raw = header.get_text(strip=True)
-            # Format: "DayName - DD MonthName YYYY"
-            match = re.search(r"\d{1,2}\s+\w+\s+\d{4}", raw)
-            if match:
-                try:
-                    parsed = datetime.strptime(match.group(), "%d %B %Y")
-                    current_date = parsed.strftime("%Y-%m-%d")
-                    schedule.setdefault(current_date, [])
-                except ValueError:
-                    current_date = None
-            continue
-
-        if current_date is None:
-            continue
-
-        cols = row.find_all("td")
-        if not cols:
-            continue
-
-        def col_text(idx: int) -> str:
-            return cols[idx].get_text(strip=True) if idx < len(cols) else ""
-
-        time_str = col_text(0)
-        class_name = col_text(1)
-        if not time_str or not class_name:
-            continue
-
-        # Extract slot id
-        slot_id = None
-        col6 = cols[5] if len(cols) > 5 else None
-        if col6:
-            el = col6.find(id=True)
-            if el and el.get("id", "").startswith("slot"):
-                slot_id = el["id"].replace("slot", "")
-        if not slot_id:
-            col5 = cols[4] if len(cols) > 4 else None
-            if col5:
-                link = col5.find("a", id=True)
-                if link and link.get("id", "").startswith("price"):
-                    slot_id = link["id"].replace("price", "")
-
-        # Determine booking status from last column text
-        action = col_text(6) if len(cols) > 6 else col_text(5) if len(cols) > 5 else ""
-
-        # Calculate when the class becomes bookable
-        class_datetime_str = f"{current_date} {time_str}"
-        bookable_from = None
-        try:
-            class_dt = datetime.strptime(class_datetime_str, "%Y-%m-%d %H:%M")
-            bookable_dt = class_dt - timedelta(hours=BOOKING_WINDOW_HOURS)
-            bookable_from = bookable_dt.strftime("%Y-%m-%dT%H:%M:%S")
-        except ValueError:
-            pass
-
-        schedule[current_date].append({
-            "id": slot_id,
-            "className": class_name,
-            "time": time_str,
-            "category": col_text(2),
-            "instructor": col_text(3),
-            "duration": col_text(4),
-            "location": club_name,
-            "status": action,
-            "classDatetime": f"{current_date}T{time_str}:00" if time_str else None,
-            "bookableFrom": bookable_from,
-        })
-
-    return schedule
-
-
-def fetch_timetable_for_club(club_id: int, club_name: str) -> dict[str, list[dict]]:
-    """Fetch and parse the timetable for a single club."""
-    resp = SESSION.get(TIMETABLE_URL, params={"clubId": club_id})
+def fetch_schedule(venue_id: int, start_date: str, end_date: str) -> list[dict]:
+    """Fetch class schedule for a single venue and date range."""
+    resp = requests.get(SCHEDULE_URL, params={
+        "venue_id": venue_id,
+        "start_date": start_date,
+        "end_date": end_date,
+    })
     resp.raise_for_status()
-    return parse_timetable(resp.text, club_name)
+    return resp.json().get("class_schedules", [])
 
 
-def combine_timetables(timetables: list[dict[str, list[dict]]]) -> dict[str, list[dict]]:
-    """Merge multiple club timetables into one date-keyed dict."""
-    combined: dict[str, list[dict]] = {}
-    for tt in timetables:
-        for date, classes in tt.items():
-            combined.setdefault(date, []).extend(classes)
-    return combined
+def fetch_full_schedule(venue_id: int, start_date: datetime, end_date: datetime) -> list[dict]:
+    """Fetch schedule across a date range, chunked into 3-day windows."""
+    all_classes = []
+    current = start_date
+    while current <= end_date:
+        chunk_end = min(current + timedelta(days=SCHEDULE_MAX_DAYS - 1), end_date)
+        classes = fetch_schedule(
+            venue_id,
+            current.strftime("%Y-%m-%d"),
+            chunk_end.strftime("%Y-%m-%d"),
+        )
+        all_classes.extend(classes)
+        current = chunk_end + timedelta(days=1)
+    return all_classes
+
+
+def build_schedule_entry(class_info: dict, slot: dict) -> dict:
+    """Build a single schedule entry from a class + slot pair."""
+    booked = slot.get("bookedParticipants", 0)
+    capacity = slot.get("maxParticipants", 0)
+    waiting = slot.get("waitingListParticipants", 0)
+    max_waiting = slot.get("maxWaitingListParticipants", 0)
+
+    if capacity > 0 and booked >= capacity:
+        if max_waiting > 0 and waiting < max_waiting:
+            availability = "waitlist"
+        else:
+            availability = "full"
+    else:
+        availability = "available"
+
+    instructors = [i.get("publicName") or f"{i.get('firstName', '')} {i.get('lastName', '')}".strip()
+                   for i in slot.get("instructors", [])]
+
+    return {
+        "slotId": slot.get("id"),
+        "classId": class_info.get("id"),
+        "className": class_info.get("title"),
+        "category": class_info.get("category"),
+        "description": class_info.get("description"),
+        "duration": class_info.get("duration"),
+        "startDateTime": slot.get("startDateTime"),
+        "endDateTime": slot.get("endDateTime"),
+        "location": slot.get("location", {}).get("name"),
+        "locationId": slot.get("location", {}).get("id"),
+        "instructors": instructors,
+        "capacity": capacity,
+        "booked": booked,
+        "spotsLeft": max(0, capacity - booked),
+        "waitingList": waiting,
+        "maxWaitingList": max_waiting,
+        "availability": availability,
+        "bookableFrom": slot.get("earliestBookingDateTime"),
+        "bookableUntil": slot.get("latestBookingDateTime"),
+    }
 
 
 def main() -> None:
-    email = os.environ.get("GYMBOX_EMAIL", "")
-    password = os.environ.get("GYMBOX_PASSWORD", "")
+    now = datetime.now(timezone.utc)
+    start_date = now
+    # Fetch 7 days ahead (the practical booking window)
+    end_date = now + timedelta(days=6)
 
-    if not email or not password:
-        print("GYMBOX_EMAIL and GYMBOX_PASSWORD environment variables are required", file=sys.stderr)
-        sys.exit(1)
+    studios = get_gymbox_studios()
 
-    login(email, password)
-    clubs = get_all_clubs()
+    all_entries = []
+    for studio in studios:
+        studio_id = studio["id"]
+        studio_name = studio["studioName"]
+        print(f"  Fetching {studio_name} (id={studio_id})...")
 
-    timetables = []
-    for club in clubs:
-        club_id = club.get("Id")
-        club_name = club.get("Name", f"Club {club_id}")
-        print(f"  Fetching timetable for {club_name} (id={club_id})...")
         try:
-            tt = fetch_timetable_for_club(club_id, club_name)
-            timetables.append(tt)
-            class_count = sum(len(v) for v in tt.values())
-            print(f"    -> {class_count} classes found")
+            class_schedules = fetch_full_schedule(studio_id, start_date, end_date)
+            count = 0
+            for cs in class_schedules:
+                class_info = cs.get("class", {})
+                for slot in cs.get("slots", []):
+                    all_entries.append(build_schedule_entry(class_info, slot))
+                    count += 1
+            print(f"    -> {count} class slots")
         except Exception as e:
             print(f"    -> Failed: {e}", file=sys.stderr)
 
-    schedule = combine_timetables(timetables)
+    # Group by date
+    schedule_by_date: dict[str, list[dict]] = {}
+    for entry in all_entries:
+        date = entry["startDateTime"][:10] if entry.get("startDateTime") else "unknown"
+        schedule_by_date.setdefault(date, []).append(entry)
 
-    # Sort dates and classes within each date by time
-    sorted_schedule = {}
-    for date in sorted(schedule.keys()):
-        sorted_schedule[date] = sorted(schedule[date], key=lambda c: (c["location"], c["time"]))
+    # Sort each day by location then time
+    for date in schedule_by_date:
+        schedule_by_date[date].sort(key=lambda c: (c.get("location", ""), c.get("startDateTime", "")))
+
+    sorted_schedule = dict(sorted(schedule_by_date.items()))
 
     output = {
-        "fetchedAt": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "fetchedAt": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "bookingWindowHours": BOOKING_WINDOW_HOURS,
-        "clubCount": len(clubs),
-        "clubs": [{"id": c.get("Id"), "name": c.get("Name")} for c in clubs],
+        "dateRange": {
+            "start": start_date.strftime("%Y-%m-%d"),
+            "end": end_date.strftime("%Y-%m-%d"),
+        },
+        "studios": [{"id": s["id"], "name": s["studioName"]} for s in studios],
         "schedule": sorted_schedule,
     }
 
-    with open("gymbox-schedule.json", "w") as f:
+    with open(OUTPUT_FILE, "w") as f:
         json.dump(output, f, indent=2)
 
-    total_classes = sum(len(v) for v in sorted_schedule.values())
-    print(f"\nSchedule saved: {len(sorted_schedule)} days, {total_classes} classes across {len(clubs)} clubs")
+    total = sum(len(v) for v in sorted_schedule.values())
+    full = sum(1 for v in sorted_schedule.values() for c in v if c["availability"] == "full")
+    print(f"\nSaved {OUTPUT_FILE}: {total} class slots across {len(studios)} studios, {len(sorted_schedule)} days")
+    print(f"  {full} fully booked, {total - full} with availability")
 
 
 if __name__ == "__main__":
