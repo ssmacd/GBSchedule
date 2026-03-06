@@ -2,7 +2,7 @@ name: Fetch GymBox Schedule
 
 on:
   schedule:
-    - cron: '0 4 * * *'  # 4am UTC daily
+    - cron: '*/10 * * * *'  # every 30 minutes
   workflow_dispatch:
 
 permissions:
