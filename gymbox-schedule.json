@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-27T04:03:03Z",
+  "fetchedAt": "2026-03-27T05:47:29Z",
   "bookingWindowHours": 74,
   "dateRange": {
     "start": "2026-03-27",
@@ -64,8 +64,8 @@
           "Femi"
         ],
         "capacity": 12,
-        "booked": 9,
-        "spotsLeft": 3,
+        "booked": 8,
+        "spotsLeft": 4,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -464,29 +464,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1347253721,
-        "classId": 1274009324,
-        "className": "Muay Thai",
-        "category": "Fight",
-        "description": "Looking to join a new boxing Kru? Say Sawa Dee to Muay Thai \u2013 high energy workout with all the sweatiness of those far Eastern shores. Pop on your pads and hop in the ring to work on defensive and offensive kicks, punches and clinches. It\u2019s definitely not for wimps. BYO Boxing gloves/bag mitts.",
-        "duration": 45,
-        "startDateTime": "2026-03-27T18:30:00+00:00",
-        "endDateTime": "2026-03-27T19:15:00+00:00",
-        "location": "Gymbox Ealing",
-        "locationId": 1312500380,
-        "instructors": [
-          "Veronika"
-        ],
-        "capacity": 16,
-        "booked": 16,
-        "spotsLeft": 0,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "full",
-        "bookableFrom": "2026-03-24T16:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1320055658,
         "classId": 1274007059,
         "className": "WOD Squad HVY",
@@ -506,6 +483,29 @@
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
+        "bookableFrom": "2026-03-24T16:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1347253721,
+        "classId": 1274009324,
+        "className": "Muay Thai",
+        "category": "Fight",
+        "description": "Looking to join a new boxing Kru? Say Sawa Dee to Muay Thai \u2013 high energy workout with all the sweatiness of those far Eastern shores. Pop on your pads and hop in the ring to work on defensive and offensive kicks, punches and clinches. It\u2019s definitely not for wimps. BYO Boxing gloves/bag mitts.",
+        "duration": 45,
+        "startDateTime": "2026-03-27T18:30:00+00:00",
+        "endDateTime": "2026-03-27T19:15:00+00:00",
+        "location": "Gymbox Ealing",
+        "locationId": 1312500380,
+        "instructors": [
+          "Veronika"
+        ],
+        "capacity": 16,
+        "booked": 16,
+        "spotsLeft": 0,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "full",
         "bookableFrom": "2026-03-24T16:30:00+00:00",
         "bookableUntil": null
       },
@@ -533,6 +533,27 @@
         "bookableUntil": null
       },
       {
+        "slotId": 1320074475,
+        "classId": 1274023123,
+        "className": "Vinyasa Flow Yoga",
+        "category": "Holistic",
+        "description": "Smooth as silk. Chill as you like. Vinyasa flow is your secret oasis of order amongst the chaos of modern life. Knock the frenzy down a few notches by channelling your energies into a dynamic flow that builds strength, improves flexibility and restores sanity one delicious breath at a time.",
+        "duration": 60,
+        "startDateTime": "2026-03-27T07:30:00+00:00",
+        "endDateTime": "2026-03-27T08:30:00+00:00",
+        "location": "Gymbox Elephant and Castle",
+        "locationId": 1312517630,
+        "instructors": [],
+        "capacity": 18,
+        "booked": 10,
+        "spotsLeft": 8,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-24T05:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
         "slotId": 1320070885,
         "classId": 1274095200,
         "className": "Bike & Beats",
@@ -547,29 +568,8 @@
           "Francesca"
         ],
         "capacity": 25,
-        "booked": 24,
-        "spotsLeft": 1,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-24T05:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
-        "slotId": 1320074475,
-        "classId": 1274023123,
-        "className": "Vinyasa Flow Yoga",
-        "category": "Holistic",
-        "description": "Smooth as silk. Chill as you like. Vinyasa flow is your secret oasis of order amongst the chaos of modern life. Knock the frenzy down a few notches by channelling your energies into a dynamic flow that builds strength, improves flexibility and restores sanity one delicious breath at a time.",
-        "duration": 60,
-        "startDateTime": "2026-03-27T07:30:00+00:00",
-        "endDateTime": "2026-03-27T08:30:00+00:00",
-        "location": "Gymbox Elephant and Castle",
-        "locationId": 1312517630,
-        "instructors": [],
-        "capacity": 18,
-        "booked": 11,
-        "spotsLeft": 7,
+        "booked": 23,
+        "spotsLeft": 2,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -683,8 +683,8 @@
           "Chucky"
         ],
         "capacity": 22,
-        "booked": 21,
-        "spotsLeft": 1,
+        "booked": 20,
+        "spotsLeft": 2,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -991,29 +991,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1323039757,
-        "classId": 1274093791,
-        "className": "Hyrox",
-        "category": "Sweat",
-        "description": "Engineered for endurance. Built for power. HYROX fuses functional strength with high-intensity cardio to push your limits every session. Whether you\u2019re fine-tuning for race day or throwing yourself into something new, expect serious graft, smart programming, and a session that demands everything you\u2019ve got.",
-        "duration": 45,
-        "startDateTime": "2026-03-27T12:00:00+00:00",
-        "endDateTime": "2026-03-27T12:45:00+00:00",
-        "location": "Gymbox Farringdon",
-        "locationId": 1312510090,
-        "instructors": [
-          "George"
-        ],
-        "capacity": 22,
-        "booked": 22,
-        "spotsLeft": 0,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "full",
-        "bookableFrom": "2026-03-24T10:00:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1323032102,
         "classId": 1273966731,
         "className": "Aerial Loops",
@@ -1029,6 +1006,29 @@
         ],
         "capacity": 10,
         "booked": 10,
+        "spotsLeft": 0,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "full",
+        "bookableFrom": "2026-03-24T10:00:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1323039757,
+        "classId": 1274093791,
+        "className": "Hyrox",
+        "category": "Sweat",
+        "description": "Engineered for endurance. Built for power. HYROX fuses functional strength with high-intensity cardio to push your limits every session. Whether you\u2019re fine-tuning for race day or throwing yourself into something new, expect serious graft, smart programming, and a session that demands everything you\u2019ve got.",
+        "duration": 45,
+        "startDateTime": "2026-03-27T12:00:00+00:00",
+        "endDateTime": "2026-03-27T12:45:00+00:00",
+        "location": "Gymbox Farringdon",
+        "locationId": 1312510090,
+        "instructors": [
+          "George"
+        ],
+        "capacity": 22,
+        "booked": 22,
         "spotsLeft": 0,
         "waitingList": 0,
         "maxWaitingList": 0,
@@ -1281,11 +1281,11 @@
           "Kylie"
         ],
         "capacity": 18,
-        "booked": 18,
-        "spotsLeft": 0,
+        "booked": 17,
+        "spotsLeft": 1,
         "waitingList": 0,
         "maxWaitingList": 0,
-        "availability": "full",
+        "availability": "available",
         "bookableFrom": "2026-03-24T05:00:00+00:00",
         "bookableUntil": null
       },
@@ -1313,29 +1313,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1323626602,
-        "classId": 1273966737,
-        "className": "The Fundamentals",
-        "category": "Strength",
-        "description": "Strength starts here. Master the squat, deadlift, and press with precision, power, and control. No shortcuts\u2014just focused reps, expert coaching, and constant refinement. Get the technique right, and the numbers will follow.",
-        "duration": 45,
-        "startDateTime": "2026-03-27T08:00:00+00:00",
-        "endDateTime": "2026-03-27T08:45:00+00:00",
-        "location": "Gymbox Finsbury Park",
-        "locationId": 1312525370,
-        "instructors": [
-          "Ilenia"
-        ],
-        "capacity": 18,
-        "booked": 14,
-        "spotsLeft": 4,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-24T06:00:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1323650199,
         "classId": 1274095200,
         "className": "Bike & Beats",
@@ -1355,6 +1332,29 @@
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "full",
+        "bookableFrom": "2026-03-24T06:00:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1323626602,
+        "classId": 1273966737,
+        "className": "The Fundamentals",
+        "category": "Strength",
+        "description": "Strength starts here. Master the squat, deadlift, and press with precision, power, and control. No shortcuts\u2014just focused reps, expert coaching, and constant refinement. Get the technique right, and the numbers will follow.",
+        "duration": 45,
+        "startDateTime": "2026-03-27T08:00:00+00:00",
+        "endDateTime": "2026-03-27T08:45:00+00:00",
+        "location": "Gymbox Finsbury Park",
+        "locationId": 1312525370,
+        "instructors": [
+          "Ilenia"
+        ],
+        "capacity": 18,
+        "booked": 14,
+        "spotsLeft": 4,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
         "bookableFrom": "2026-03-24T06:00:00+00:00",
         "bookableUntil": null
       },
@@ -1741,8 +1741,8 @@
           "Alana"
         ],
         "capacity": 16,
-        "booked": 6,
-        "spotsLeft": 10,
+        "booked": 5,
+        "spotsLeft": 11,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -1787,8 +1787,8 @@
           "Wayne\ufffd"
         ],
         "capacity": 16,
-        "booked": 9,
-        "spotsLeft": 7,
+        "booked": 10,
+        "spotsLeft": 6,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -1879,8 +1879,8 @@
           "Alison"
         ],
         "capacity": 16,
-        "booked": 15,
-        "spotsLeft": 1,
+        "booked": 14,
+        "spotsLeft": 2,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -2063,35 +2063,12 @@
           "Lucy"
         ],
         "capacity": 16,
-        "booked": 11,
-        "spotsLeft": 5,
+        "booked": 12,
+        "spotsLeft": 4,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
         "bookableFrom": "2026-03-24T04:15:00+00:00",
-        "bookableUntil": null
-      },
-      {
-        "slotId": 1319880180,
-        "classId": 1274095200,
-        "className": "Bike & Beats",
-        "category": "Ride",
-        "description": "Bike & Beats is the class to make spin everyone\u2019s thing, with playlists to get you pumped, and climbs, sprints and jumps to seriously crank your cardio training up a gear. Whether you\u2019re more used to pushing pedals or pounding the dancefloor, you\u2019ll soon find your rhythm at this multicoloured mash up.",
-        "duration": 45,
-        "startDateTime": "2026-03-27T07:15:00+00:00",
-        "endDateTime": "2026-03-27T08:00:00+00:00",
-        "location": "Gymbox Victoria",
-        "locationId": 1312527970,
-        "instructors": [
-          "Jessica"
-        ],
-        "capacity": 22,
-        "booked": 19,
-        "spotsLeft": 3,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-24T05:15:00+00:00",
         "bookableUntil": null
       },
       {
@@ -2114,6 +2091,29 @@
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "full",
+        "bookableFrom": "2026-03-24T05:15:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1319880180,
+        "classId": 1274095200,
+        "className": "Bike & Beats",
+        "category": "Ride",
+        "description": "Bike & Beats is the class to make spin everyone\u2019s thing, with playlists to get you pumped, and climbs, sprints and jumps to seriously crank your cardio training up a gear. Whether you\u2019re more used to pushing pedals or pounding the dancefloor, you\u2019ll soon find your rhythm at this multicoloured mash up.",
+        "duration": 45,
+        "startDateTime": "2026-03-27T07:15:00+00:00",
+        "endDateTime": "2026-03-27T08:00:00+00:00",
+        "location": "Gymbox Victoria",
+        "locationId": 1312527970,
+        "instructors": [
+          "Jessica"
+        ],
+        "capacity": 22,
+        "booked": 18,
+        "spotsLeft": 4,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
         "bookableFrom": "2026-03-24T05:15:00+00:00",
         "bookableUntil": null
       },
@@ -2178,11 +2178,11 @@
           "Lucy"
         ],
         "capacity": 16,
-        "booked": 16,
-        "spotsLeft": 0,
+        "booked": 15,
+        "spotsLeft": 1,
         "waitingList": 0,
         "maxWaitingList": 0,
-        "availability": "full",
+        "availability": "available",
         "bookableFrom": "2026-03-24T06:45:00+00:00",
         "bookableUntil": null
       },
@@ -2546,8 +2546,8 @@
           "Helen"
         ],
         "capacity": 20,
-        "booked": 14,
-        "spotsLeft": 6,
+        "booked": 15,
+        "spotsLeft": 5,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -2831,29 +2831,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1320059371,
-        "classId": 1274093791,
-        "className": "Hyrox",
-        "category": "Sweat",
-        "description": "Engineered for endurance. Built for power. HYROX fuses functional strength with high-intensity cardio to push your limits every session. Whether you\u2019re fine-tuning for race day or throwing yourself into something new, expect serious graft, smart programming, and a session that demands everything you\u2019ve got.",
-        "duration": 45,
-        "startDateTime": "2026-03-27T08:00:00+00:00",
-        "endDateTime": "2026-03-27T08:45:00+00:00",
-        "location": "Gymbox Westfield Stratford",
-        "locationId": 1312522220,
-        "instructors": [
-          "Libby"
-        ],
-        "capacity": 16,
-        "booked": 16,
-        "spotsLeft": 0,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "full",
-        "bookableFrom": "2026-03-24T06:00:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1320041745,
         "classId": 1274095200,
         "className": "Bike & Beats",
@@ -2877,18 +2854,18 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1320076465,
-        "classId": 1274007059,
-        "className": "WOD Squad HVY",
-        "category": "Strength",
-        "description": "Testing your strength, building your skills as well as an intense sweat, WOD Squad is split into three styles of class to alternate each day, we\u2019re helping you vary your fitness journey with different physical and mental experiences to keep your workout fresh (even if you\u2019re not.) You\u2019ll know it\u2019s been a heavy day when you\u2019re feeling this emotional. In these sessions you\u2019ll need your head in the game, psyching yourself up for a big lift or a hard sprint interval \u2013 but that\u2019s just a small part of the whole thing. Expect to clang weights, bang barbells and rack up RPMs like you\u2019ve never done before.",
+        "slotId": 1320059371,
+        "classId": 1274093791,
+        "className": "Hyrox",
+        "category": "Sweat",
+        "description": "Engineered for endurance. Built for power. HYROX fuses functional strength with high-intensity cardio to push your limits every session. Whether you\u2019re fine-tuning for race day or throwing yourself into something new, expect serious graft, smart programming, and a session that demands everything you\u2019ve got.",
         "duration": 45,
-        "startDateTime": "2026-03-27T12:00:00+00:00",
-        "endDateTime": "2026-03-27T12:45:00+00:00",
+        "startDateTime": "2026-03-27T08:00:00+00:00",
+        "endDateTime": "2026-03-27T08:45:00+00:00",
         "location": "Gymbox Westfield Stratford",
         "locationId": 1312522220,
         "instructors": [
-          "Alison"
+          "Libby"
         ],
         "capacity": 16,
         "booked": 16,
@@ -2896,7 +2873,7 @@
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "full",
-        "bookableFrom": "2026-03-24T10:00:00+00:00",
+        "bookableFrom": "2026-03-24T06:00:00+00:00",
         "bookableUntil": null
       },
       {
@@ -2923,18 +2900,18 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1355954895,
-        "classId": 1274010757,
-        "className": "Vinyasa Flow Yoga",
-        "category": "Holistic",
-        "description": "Smooth as silk. Chill as you like. Vinyasa flow is your secret oasis of order amongst the chaos of modern life. Knock the frenzy down a few notches by channelling your energies into a dynamic flow that builds strength, improves flexibility and restores sanity one delicious breath at a time.",
+        "slotId": 1320076465,
+        "classId": 1274007059,
+        "className": "WOD Squad HVY",
+        "category": "Strength",
+        "description": "Testing your strength, building your skills as well as an intense sweat, WOD Squad is split into three styles of class to alternate each day, we\u2019re helping you vary your fitness journey with different physical and mental experiences to keep your workout fresh (even if you\u2019re not.) You\u2019ll know it\u2019s been a heavy day when you\u2019re feeling this emotional. In these sessions you\u2019ll need your head in the game, psyching yourself up for a big lift or a hard sprint interval \u2013 but that\u2019s just a small part of the whole thing. Expect to clang weights, bang barbells and rack up RPMs like you\u2019ve never done before.",
         "duration": 45,
-        "startDateTime": "2026-03-27T12:15:00+00:00",
-        "endDateTime": "2026-03-27T13:00:00+00:00",
+        "startDateTime": "2026-03-27T12:00:00+00:00",
+        "endDateTime": "2026-03-27T12:45:00+00:00",
         "location": "Gymbox Westfield Stratford",
         "locationId": 1312522220,
         "instructors": [
-          "Chloe"
+          "Alison"
         ],
         "capacity": 16,
         "booked": 16,
@@ -2942,7 +2919,7 @@
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "full",
-        "bookableFrom": "2026-03-24T10:15:00+00:00",
+        "bookableFrom": "2026-03-24T10:00:00+00:00",
         "bookableUntil": null
       },
       {
@@ -2961,6 +2938,29 @@
         ],
         "capacity": 20,
         "booked": 20,
+        "spotsLeft": 0,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "full",
+        "bookableFrom": "2026-03-24T10:15:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1355954895,
+        "classId": 1274010757,
+        "className": "Vinyasa Flow Yoga",
+        "category": "Holistic",
+        "description": "Smooth as silk. Chill as you like. Vinyasa flow is your secret oasis of order amongst the chaos of modern life. Knock the frenzy down a few notches by channelling your energies into a dynamic flow that builds strength, improves flexibility and restores sanity one delicious breath at a time.",
+        "duration": 45,
+        "startDateTime": "2026-03-27T12:15:00+00:00",
+        "endDateTime": "2026-03-27T13:00:00+00:00",
+        "location": "Gymbox Westfield Stratford",
+        "locationId": 1312522220,
+        "instructors": [
+          "Chloe"
+        ],
+        "capacity": 16,
+        "booked": 16,
         "spotsLeft": 0,
         "waitingList": 0,
         "maxWaitingList": 0,
@@ -3061,29 +3061,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1320091335,
-        "classId": 1274010752,
-        "className": "Fly Low",
-        "category": "Aerial",
-        "description": "Succumb to self-expression at the aerial dance class where sensuality takes the spotlight. Blending release technique choreography and free-flowing Fly Low style, deliciously smooth moves send you seamlessly from hammock to ground in gravity-defying routines. Gliding, spinning and swinging effortlessly through the air, it\u2019s where floorwork lovers let their inner performer soar. Please remove all jewellery beforehand.",
-        "duration": 45,
-        "startDateTime": "2026-03-27T18:00:00+00:00",
-        "endDateTime": "2026-03-27T18:45:00+00:00",
-        "location": "Gymbox Westfield Stratford",
-        "locationId": 1312522220,
-        "instructors": [
-          "Hattie"
-        ],
-        "capacity": 9,
-        "booked": 9,
-        "spotsLeft": 0,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "full",
-        "bookableFrom": "2026-03-24T16:00:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1320084610,
         "classId": 1274014899,
         "className": "Reppin'",
@@ -3099,6 +3076,52 @@
         ],
         "capacity": 22,
         "booked": 22,
+        "spotsLeft": 0,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "full",
+        "bookableFrom": "2026-03-24T16:00:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1320087968,
+        "classId": 1274009325,
+        "className": "Muay Thai",
+        "category": "Fight",
+        "description": "Looking to join a new boxing Kru? Say Sawa Dee to Muay Thai \u2013 high energy workout with all the sweatiness of those far Eastern shores. Pop on your pads and hop in the ring to work on defensive and offensive kicks, punches and clinches. It\u2019s definitely not for wimps. BYO Boxing gloves/bag mitts.",
+        "duration": 60,
+        "startDateTime": "2026-03-27T18:00:00+00:00",
+        "endDateTime": "2026-03-27T19:00:00+00:00",
+        "location": "Gymbox Westfield Stratford",
+        "locationId": 1312522220,
+        "instructors": [
+          "Cyrus Fennell"
+        ],
+        "capacity": 20,
+        "booked": 20,
+        "spotsLeft": 0,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "full",
+        "bookableFrom": "2026-03-24T16:00:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1320091335,
+        "classId": 1274010752,
+        "className": "Fly Low",
+        "category": "Aerial",
+        "description": "Succumb to self-expression at the aerial dance class where sensuality takes the spotlight. Blending release technique choreography and free-flowing Fly Low style, deliciously smooth moves send you seamlessly from hammock to ground in gravity-defying routines. Gliding, spinning and swinging effortlessly through the air, it\u2019s where floorwork lovers let their inner performer soar. Please remove all jewellery beforehand.",
+        "duration": 45,
+        "startDateTime": "2026-03-27T18:00:00+00:00",
+        "endDateTime": "2026-03-27T18:45:00+00:00",
+        "location": "Gymbox Westfield Stratford",
+        "locationId": 1312522220,
+        "instructors": [
+          "Hattie"
+        ],
+        "capacity": 9,
+        "booked": 9,
         "spotsLeft": 0,
         "waitingList": 0,
         "maxWaitingList": 0,
@@ -3126,29 +3149,6 @@
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
-        "bookableFrom": "2026-03-24T16:00:00+00:00",
-        "bookableUntil": null
-      },
-      {
-        "slotId": 1320087968,
-        "classId": 1274009325,
-        "className": "Muay Thai",
-        "category": "Fight",
-        "description": "Looking to join a new boxing Kru? Say Sawa Dee to Muay Thai \u2013 high energy workout with all the sweatiness of those far Eastern shores. Pop on your pads and hop in the ring to work on defensive and offensive kicks, punches and clinches. It\u2019s definitely not for wimps. BYO Boxing gloves/bag mitts.",
-        "duration": 60,
-        "startDateTime": "2026-03-27T18:00:00+00:00",
-        "endDateTime": "2026-03-27T19:00:00+00:00",
-        "location": "Gymbox Westfield Stratford",
-        "locationId": 1312522220,
-        "instructors": [
-          "Cyrus Fennell"
-        ],
-        "capacity": 20,
-        "booked": 20,
-        "spotsLeft": 0,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "full",
         "bookableFrom": "2026-03-24T16:00:00+00:00",
         "bookableUntil": null
       },
@@ -3330,8 +3330,8 @@
           "Mel"
         ],
         "capacity": 18,
-        "booked": 13,
-        "spotsLeft": 5,
+        "booked": 14,
+        "spotsLeft": 4,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -3477,29 +3477,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1320081481,
-        "classId": 1274018396,
-        "className": "Breathwork",
-        "category": "Holistic",
-        "description": "Providing inspiration for optimal respiration, Breathwork teaches functional techniques that will breathe new life into your daily well-being. From improving training to outsmarting anxiety, make space for the hacks that\u2019ll keep your lungs fighting fit.",
-        "duration": 30,
-        "startDateTime": "2026-03-28T13:30:00+00:00",
-        "endDateTime": "2026-03-28T14:00:00+00:00",
-        "location": "Gymbox Ealing",
-        "locationId": 1312500380,
-        "instructors": [
-          "Rory"
-        ],
-        "capacity": 20,
-        "booked": 12,
-        "spotsLeft": 8,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-25T11:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1320085143,
         "classId": 1274023126,
         "className": "Pole Tricks",
@@ -3519,6 +3496,29 @@
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "full",
+        "bookableFrom": "2026-03-25T11:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1320081481,
+        "classId": 1274018396,
+        "className": "Breathwork",
+        "category": "Holistic",
+        "description": "Providing inspiration for optimal respiration, Breathwork teaches functional techniques that will breathe new life into your daily well-being. From improving training to outsmarting anxiety, make space for the hacks that\u2019ll keep your lungs fighting fit.",
+        "duration": 30,
+        "startDateTime": "2026-03-28T13:30:00+00:00",
+        "endDateTime": "2026-03-28T14:00:00+00:00",
+        "location": "Gymbox Ealing",
+        "locationId": 1312500380,
+        "instructors": [
+          "Rory"
+        ],
+        "capacity": 20,
+        "booked": 12,
+        "spotsLeft": 8,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
         "bookableFrom": "2026-03-25T11:30:00+00:00",
         "bookableUntil": null
       },
@@ -3661,29 +3661,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1320124232,
-        "classId": 1274010755,
-        "className": "Boxing Rookie",
-        "category": "Fight",
-        "description": "Starting boxing from scratch? The gloves are on and London's pros are primed to pass on all the tips and techniques you need to come out swinging. Get to grips with the rules. Do your thing in the ring. Start your journey to every world title going. Ding, ding \u2013 ROUND ONE. BYO Boxing gloves/bag mitts.",
-        "duration": 45,
-        "startDateTime": "2026-03-28T10:00:00+00:00",
-        "endDateTime": "2026-03-28T10:45:00+00:00",
-        "location": "Gymbox Elephant and Castle",
-        "locationId": 1312517630,
-        "instructors": [
-          "Abdul Mumin Yassine"
-        ],
-        "capacity": 18,
-        "booked": 18,
-        "spotsLeft": 0,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "full",
-        "bookableFrom": "2026-03-25T08:00:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1320122078,
         "classId": 1274096992,
         "className": "Metcon",
@@ -3696,6 +3673,29 @@
         "locationId": 1312517630,
         "instructors": [
           "Luther"
+        ],
+        "capacity": 18,
+        "booked": 18,
+        "spotsLeft": 0,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "full",
+        "bookableFrom": "2026-03-25T08:00:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1320124232,
+        "classId": 1274010755,
+        "className": "Boxing Rookie",
+        "category": "Fight",
+        "description": "Starting boxing from scratch? The gloves are on and London's pros are primed to pass on all the tips and techniques you need to come out swinging. Get to grips with the rules. Do your thing in the ring. Start your journey to every world title going. Ding, ding \u2013 ROUND ONE. BYO Boxing gloves/bag mitts.",
+        "duration": 45,
+        "startDateTime": "2026-03-28T10:00:00+00:00",
+        "endDateTime": "2026-03-28T10:45:00+00:00",
+        "location": "Gymbox Elephant and Castle",
+        "locationId": 1312517630,
+        "instructors": [
+          "Abdul Mumin Yassine"
         ],
         "capacity": 18,
         "booked": 18,
@@ -3834,8 +3834,8 @@
           "Luther"
         ],
         "capacity": 20,
-        "booked": 12,
-        "spotsLeft": 8,
+        "booked": 13,
+        "spotsLeft": 7,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -4731,8 +4731,8 @@
           "Cyrus"
         ],
         "capacity": 20,
-        "booked": 18,
-        "spotsLeft": 2,
+        "booked": 19,
+        "spotsLeft": 1,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -4832,29 +4832,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1319974754,
-        "classId": 1274018391,
-        "className": "Boxing",
-        "category": "Fight",
-        "description": "Ladies and gentlemen, the main attraction! Seconds out, round one. The gloves are on and London's pros are primed to pass on all the tips and techniques you need to come out swinging. A boxing technique focused class, expect drill on and off the bag, suitable for mixed levels. \u00a0BYO Boxing gloves/bag mitts.",
-        "duration": 60,
-        "startDateTime": "2026-03-28T11:30:00+00:00",
-        "endDateTime": "2026-03-28T12:30:00+00:00",
-        "location": "Gymbox Victoria",
-        "locationId": 1312527970,
-        "instructors": [
-          "Solomon Wilson"
-        ],
-        "capacity": 16,
-        "booked": 8,
-        "spotsLeft": 8,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-25T09:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1320126780,
         "classId": 1273966733,
         "className": "Callback",
@@ -4871,6 +4848,29 @@
         "capacity": 12,
         "booked": 11,
         "spotsLeft": 1,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-25T09:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1319974754,
+        "classId": 1274018391,
+        "className": "Boxing",
+        "category": "Fight",
+        "description": "Ladies and gentlemen, the main attraction! Seconds out, round one. The gloves are on and London's pros are primed to pass on all the tips and techniques you need to come out swinging. A boxing technique focused class, expect drill on and off the bag, suitable for mixed levels. \u00a0BYO Boxing gloves/bag mitts.",
+        "duration": 60,
+        "startDateTime": "2026-03-28T11:30:00+00:00",
+        "endDateTime": "2026-03-28T12:30:00+00:00",
+        "location": "Gymbox Victoria",
+        "locationId": 1312527970,
+        "instructors": [
+          "Solomon Wilson"
+        ],
+        "capacity": 16,
+        "booked": 8,
+        "spotsLeft": 8,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -4947,29 +4947,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1322185195,
-        "classId": 1318004470,
-        "className": "Hatha Yoga",
-        "category": "Holistic",
-        "description": "Reality kicking you where it hurts? Consider this your antidote to urban life. Through a deliciously slow and focused flow, we\u2019ll ease your body and rebalance your mind \u2013 while more challenging poses build your endurance and strength. This is yoga that anyone can try, so come and hatha go if you\u2019re calm enough.",
-        "duration": 60,
-        "startDateTime": "2026-03-28T09:00:00+00:00",
-        "endDateTime": "2026-03-28T10:00:00+00:00",
-        "location": "Gymbox Westfield London",
-        "locationId": 1312530570,
-        "instructors": [
-          "Rory"
-        ],
-        "capacity": 14,
-        "booked": 14,
-        "spotsLeft": 0,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "full",
-        "bookableFrom": "2026-03-25T07:00:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1421206124,
         "classId": 1274102850,
         "className": "WOD Squad INT",
@@ -4989,6 +4966,29 @@
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
+        "bookableFrom": "2026-03-25T07:00:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1322185195,
+        "classId": 1318004470,
+        "className": "Hatha Yoga",
+        "category": "Holistic",
+        "description": "Reality kicking you where it hurts? Consider this your antidote to urban life. Through a deliciously slow and focused flow, we\u2019ll ease your body and rebalance your mind \u2013 while more challenging poses build your endurance and strength. This is yoga that anyone can try, so come and hatha go if you\u2019re calm enough.",
+        "duration": 60,
+        "startDateTime": "2026-03-28T09:00:00+00:00",
+        "endDateTime": "2026-03-28T10:00:00+00:00",
+        "location": "Gymbox Westfield London",
+        "locationId": 1312530570,
+        "instructors": [
+          "Rory"
+        ],
+        "capacity": 14,
+        "booked": 14,
+        "spotsLeft": 0,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "full",
         "bookableFrom": "2026-03-25T07:00:00+00:00",
         "bookableUntil": null
       },
@@ -5329,11 +5329,11 @@
           "Laura"
         ],
         "capacity": 16,
-        "booked": 15,
-        "spotsLeft": 1,
+        "booked": 16,
+        "spotsLeft": 0,
         "waitingList": 0,
         "maxWaitingList": 0,
-        "availability": "available",
+        "availability": "full",
         "bookableFrom": "2026-03-25T09:30:00+00:00",
         "bookableUntil": null
       },
@@ -5547,29 +5547,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1390965435,
-        "classId": 1274010754,
-        "className": "Boxing",
-        "category": "Fight",
-        "description": "Ladies and gentlemen, the main attraction! Seconds out, round one. The gloves are on and London's pros are primed to pass on all the tips and techniques you need to come out swinging. A boxing technique focused class, expect drill on and off the bag, suitable for mixed levels. \u00a0BYO Boxing gloves/bag mitts.",
-        "duration": 45,
-        "startDateTime": "2026-03-29T10:30:00+00:00",
-        "endDateTime": "2026-03-29T11:15:00+00:00",
-        "location": "Gymbox Ealing",
-        "locationId": 1312500380,
-        "instructors": [
-          "Saj"
-        ],
-        "capacity": 16,
-        "booked": 10,
-        "spotsLeft": 6,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-26T08:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1356919477,
         "classId": 1274095202,
         "className": "Functional Bodybuilding",
@@ -5586,6 +5563,29 @@
         "capacity": 18,
         "booked": 16,
         "spotsLeft": 2,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-26T08:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1390965435,
+        "classId": 1274010754,
+        "className": "Boxing",
+        "category": "Fight",
+        "description": "Ladies and gentlemen, the main attraction! Seconds out, round one. The gloves are on and London's pros are primed to pass on all the tips and techniques you need to come out swinging. A boxing technique focused class, expect drill on and off the bag, suitable for mixed levels. \u00a0BYO Boxing gloves/bag mitts.",
+        "duration": 45,
+        "startDateTime": "2026-03-29T10:30:00+00:00",
+        "endDateTime": "2026-03-29T11:15:00+00:00",
+        "location": "Gymbox Ealing",
+        "locationId": 1312500380,
+        "instructors": [
+          "Saj"
+        ],
+        "capacity": 16,
+        "booked": 10,
+        "spotsLeft": 6,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -5860,8 +5860,8 @@
           "Jesse"
         ],
         "capacity": 18,
-        "booked": 13,
-        "spotsLeft": 5,
+        "booked": 14,
+        "spotsLeft": 4,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -7021,29 +7021,6 @@
     ],
     "2026-03-30": [
       {
-        "slotId": 1321853147,
-        "classId": 1274014897,
-        "className": "WOD Squad END",
-        "category": "Strength",
-        "description": "Testing your strength, building your skills as well as an intense sweat, WOD Squad is split into three styles of class to alternate each day, we\u2019re helping you vary your fitness journey with different physical and mental experiences to keep your workout fresh (even if you\u2019re not.) All about the long sweaty sesh? If you like functional training, look forward to skill work and love a good solid slog\u2026this endurance class won\u2019t fail to deliver. Dishing out a longer metcon to prolong the burn, there\u2019s minimal stopping once we start. Just a flat-out workout to get your t-shirt twice as heavy in half the time.",
-        "duration": 45,
-        "startDateTime": "2026-03-30T06:30:00+00:00",
-        "endDateTime": "2026-03-30T07:15:00+00:00",
-        "location": "Gymbox Bank",
-        "locationId": 1312475490,
-        "instructors": [
-          "Jasmine"
-        ],
-        "capacity": 14,
-        "booked": 0,
-        "spotsLeft": 14,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-27T04:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1321860828,
         "classId": 1274014894,
         "className": "Pilates",
@@ -7060,6 +7037,29 @@
         "capacity": 14,
         "booked": 0,
         "spotsLeft": 14,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-27T04:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1321853147,
+        "classId": 1274014897,
+        "className": "WOD Squad END",
+        "category": "Strength",
+        "description": "Testing your strength, building your skills as well as an intense sweat, WOD Squad is split into three styles of class to alternate each day, we\u2019re helping you vary your fitness journey with different physical and mental experiences to keep your workout fresh (even if you\u2019re not.) All about the long sweaty sesh? If you like functional training, look forward to skill work and love a good solid slog\u2026this endurance class won\u2019t fail to deliver. Dishing out a longer metcon to prolong the burn, there\u2019s minimal stopping once we start. Just a flat-out workout to get your t-shirt twice as heavy in half the time.",
+        "duration": 45,
+        "startDateTime": "2026-03-30T06:30:00+00:00",
+        "endDateTime": "2026-03-30T07:15:00+00:00",
+        "location": "Gymbox Bank",
+        "locationId": 1312475490,
+        "instructors": [
+          "Jasmine"
+        ],
+        "capacity": 14,
+        "booked": 2,
+        "spotsLeft": 12,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -7136,22 +7136,22 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1321925293,
-        "classId": 1274023124,
-        "className": "Yoga for Lifting",
-        "category": "Holistic",
-        "description": "Whatever impact your training\u2019s had on your body, Yoga For Lifting makes the most of your motion by getting you stronger, stretchier and upping your range of movement. Whether it's for squats, cleans or overhead presses we'll get you hitting high and sinking low. One rep max PB here you come.",
+        "slotId": 1405314582,
+        "classId": 1274093794,
+        "className": "Bloody Good Workout",
+        "category": "Strength",
+        "description": "Let\u2019s stop ignoring the menstrual cycle, shall we? This period-powered sesh sacks off the stigma and gets you training in sync. An intuitive strength workout with three zones to match flow, energy and mood, it\u2019s all about moving with your body \u2013 not apologising for it.",
         "duration": 45,
         "startDateTime": "2026-03-30T16:30:00+00:00",
         "endDateTime": "2026-03-30T17:15:00+00:00",
         "location": "Gymbox Bank",
         "locationId": 1312475490,
         "instructors": [
-          "Annelise"
+          "Phillie"
         ],
-        "capacity": 12,
-        "booked": 0,
-        "spotsLeft": 12,
+        "capacity": 16,
+        "booked": 2,
+        "spotsLeft": 14,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -7182,22 +7182,22 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1405314582,
-        "classId": 1274093794,
-        "className": "Bloody Good Workout",
-        "category": "Strength",
-        "description": "Let\u2019s stop ignoring the menstrual cycle, shall we? This period-powered sesh sacks off the stigma and gets you training in sync. An intuitive strength workout with three zones to match flow, energy and mood, it\u2019s all about moving with your body \u2013 not apologising for it.",
+        "slotId": 1321925293,
+        "classId": 1274023124,
+        "className": "Yoga for Lifting",
+        "category": "Holistic",
+        "description": "Whatever impact your training\u2019s had on your body, Yoga For Lifting makes the most of your motion by getting you stronger, stretchier and upping your range of movement. Whether it's for squats, cleans or overhead presses we'll get you hitting high and sinking low. One rep max PB here you come.",
         "duration": 45,
         "startDateTime": "2026-03-30T16:30:00+00:00",
         "endDateTime": "2026-03-30T17:15:00+00:00",
         "location": "Gymbox Bank",
         "locationId": 1312475490,
         "instructors": [
-          "Phillie"
+          "Annelise"
         ],
-        "capacity": 16,
-        "booked": 2,
-        "spotsLeft": 14,
+        "capacity": 12,
+        "booked": 0,
+        "spotsLeft": 12,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -7228,22 +7228,22 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1322000127,
-        "classId": 1274009328,
-        "className": "Yin Yoga",
-        "category": "Holistic",
-        "description": "Sometimes you just need to take it slow \u2013 and Yin is the way to go. The strong and silent type, this meditative flow works for a much deeper connection than most, calming your mind and finding moments of still between the madness of daily life. It\u2019s down time you\u2019ll want to stretch out.",
-        "duration": 60,
+        "slotId": 1321992561,
+        "classId": 1273966735,
+        "className": "Kettlebell Club",
+        "category": "Strength",
+        "description": "More than a workout\u2014it\u2019s a skill, a mindset and a community. Strength, control, and mobility all come together in this class. Every lift, swing, and press is built on precision and progression, with the focus on moving well and getting stronger. Whether you're refining the basics or taking on advanced movements, you\u2019re in the right place.",
+        "duration": 45,
         "startDateTime": "2026-03-30T17:30:00+00:00",
-        "endDateTime": "2026-03-30T18:30:00+00:00",
+        "endDateTime": "2026-03-30T18:15:00+00:00",
         "location": "Gymbox Bank",
         "locationId": 1312475490,
         "instructors": [
-          "Annelise"
+          "Chris"
         ],
         "capacity": 12,
-        "booked": 0,
-        "spotsLeft": 12,
+        "booked": 2,
+        "spotsLeft": 10,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -7274,29 +7274,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1321992561,
-        "classId": 1273966735,
-        "className": "Kettlebell Club",
-        "category": "Strength",
-        "description": "More than a workout\u2014it\u2019s a skill, a mindset and a community. Strength, control, and mobility all come together in this class. Every lift, swing, and press is built on precision and progression, with the focus on moving well and getting stronger. Whether you're refining the basics or taking on advanced movements, you\u2019re in the right place.",
-        "duration": 45,
-        "startDateTime": "2026-03-30T17:30:00+00:00",
-        "endDateTime": "2026-03-30T18:15:00+00:00",
-        "location": "Gymbox Bank",
-        "locationId": 1312475490,
-        "instructors": [
-          "Chris"
-        ],
-        "capacity": 12,
-        "booked": 2,
-        "spotsLeft": 10,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-27T15:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1321984977,
         "classId": 1274095200,
         "className": "Bike & Beats",
@@ -7313,6 +7290,29 @@
         "capacity": 22,
         "booked": 2,
         "spotsLeft": 20,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-27T15:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1322000127,
+        "classId": 1274009328,
+        "className": "Yin Yoga",
+        "category": "Holistic",
+        "description": "Sometimes you just need to take it slow \u2013 and Yin is the way to go. The strong and silent type, this meditative flow works for a much deeper connection than most, calming your mind and finding moments of still between the madness of daily life. It\u2019s down time you\u2019ll want to stretch out.",
+        "duration": 60,
+        "startDateTime": "2026-03-30T17:30:00+00:00",
+        "endDateTime": "2026-03-30T18:30:00+00:00",
+        "location": "Gymbox Bank",
+        "locationId": 1312475490,
+        "instructors": [
+          "Annelise"
+        ],
+        "capacity": 12,
+        "booked": 0,
+        "spotsLeft": 12,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -7340,29 +7340,6 @@
         "maxWaitingList": 0,
         "availability": "available",
         "bookableFrom": "2026-03-27T03:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
-        "slotId": 1384368836,
-        "classId": 1274023129,
-        "className": "Escalate",
-        "category": "Sweat",
-        "description": "Functional, HIIT, circuits and track sprints? Ouch. If you\u2019re looking for a class that\u2019ll leave you knackered, aching and hilariously sweaty, you\u2019ve hit the jackpot. Move from station to station as the intensity kicks up a gear each round. You'll wonder how things escalated so quickly.",
-        "duration": 45,
-        "startDateTime": "2026-03-30T06:30:00+00:00",
-        "endDateTime": "2026-03-30T07:15:00+00:00",
-        "location": "Gymbox Ealing",
-        "locationId": 1312500380,
-        "instructors": [
-          "Cora"
-        ],
-        "capacity": 18,
-        "booked": 0,
-        "spotsLeft": 18,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-27T04:30:00+00:00",
         "bookableUntil": null
       },
       {
@@ -7405,6 +7382,29 @@
         "capacity": 22,
         "booked": 0,
         "spotsLeft": 22,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-27T04:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1384368836,
+        "classId": 1274023129,
+        "className": "Escalate",
+        "category": "Sweat",
+        "description": "Functional, HIIT, circuits and track sprints? Ouch. If you\u2019re looking for a class that\u2019ll leave you knackered, aching and hilariously sweaty, you\u2019ve hit the jackpot. Move from station to station as the intensity kicks up a gear each round. You'll wonder how things escalated so quickly.",
+        "duration": 45,
+        "startDateTime": "2026-03-30T06:30:00+00:00",
+        "endDateTime": "2026-03-30T07:15:00+00:00",
+        "location": "Gymbox Ealing",
+        "locationId": 1312500380,
+        "instructors": [
+          "Cora"
+        ],
+        "capacity": 18,
+        "booked": 0,
+        "spotsLeft": 18,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -7840,8 +7840,8 @@
           "Michaela"
         ],
         "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
+        "booked": 4,
+        "spotsLeft": 12,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -7863,12 +7863,35 @@
           "Scott"
         ],
         "capacity": 21,
-        "booked": 0,
-        "spotsLeft": 21,
+        "booked": 1,
+        "spotsLeft": 20,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
         "bookableFrom": "2026-03-27T04:15:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1319844392,
+        "classId": 1274103910,
+        "className": "Gassed",
+        "category": "Sweat",
+        "description": "Simple, savage and deceptively fast, A class where flat-out fatigue meets a high-energy high. With alternating quick-fire rounds of weighted strength, hardcore HIIT and low repetition, there\u2019s no time for your head to lose focus. This workout waits for no-one and will definitely leave you gassed.",
+        "duration": 45,
+        "startDateTime": "2026-03-30T06:30:00+00:00",
+        "endDateTime": "2026-03-30T07:15:00+00:00",
+        "location": "Gymbox Elephant and Castle",
+        "locationId": 1312517630,
+        "instructors": [
+          "Azara"
+        ],
+        "capacity": 18,
+        "booked": 1,
+        "spotsLeft": 17,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-27T04:30:00+00:00",
         "bookableUntil": null
       },
       {
@@ -7909,31 +7932,8 @@
           "Abbie"
         ],
         "capacity": 25,
-        "booked": 0,
-        "spotsLeft": 25,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-27T04:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
-        "slotId": 1319844392,
-        "classId": 1274103910,
-        "className": "Gassed",
-        "category": "Sweat",
-        "description": "Simple, savage and deceptively fast, A class where flat-out fatigue meets a high-energy high. With alternating quick-fire rounds of weighted strength, hardcore HIIT and low repetition, there\u2019s no time for your head to lose focus. This workout waits for no-one and will definitely leave you gassed.",
-        "duration": 45,
-        "startDateTime": "2026-03-30T06:30:00+00:00",
-        "endDateTime": "2026-03-30T07:15:00+00:00",
-        "location": "Gymbox Elephant and Castle",
-        "locationId": 1312517630,
-        "instructors": [
-          "Azara"
-        ],
-        "capacity": 18,
-        "booked": 0,
-        "spotsLeft": 18,
+        "booked": 2,
+        "spotsLeft": 23,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -8194,29 +8194,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1319873175,
-        "classId": 1274093792,
-        "className": "Metcon",
-        "category": "Sweat",
-        "description": "Short, quick and hotter than hell \u2013 there\u2019s no messing about with MetCon. You\u2019ll test your lung capacity and conquer your cardio quota like the endorphin-crazed machine you are. The no-nonsense way to walk in and crawl out.",
-        "duration": 30,
-        "startDateTime": "2026-03-30T17:30:00+00:00",
-        "endDateTime": "2026-03-30T18:00:00+00:00",
-        "location": "Gymbox Elephant and Castle",
-        "locationId": 1312517630,
-        "instructors": [
-          "Jai"
-        ],
-        "capacity": 18,
-        "booked": 0,
-        "spotsLeft": 18,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-27T15:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1319874450,
         "classId": 1274007058,
         "className": "Dancehall",
@@ -8233,6 +8210,29 @@
         "capacity": 16,
         "booked": 0,
         "spotsLeft": 16,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-27T15:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1319873175,
+        "classId": 1274093792,
+        "className": "Metcon",
+        "category": "Sweat",
+        "description": "Short, quick and hotter than hell \u2013 there\u2019s no messing about with MetCon. You\u2019ll test your lung capacity and conquer your cardio quota like the endorphin-crazed machine you are. The no-nonsense way to walk in and crawl out.",
+        "duration": 30,
+        "startDateTime": "2026-03-30T17:30:00+00:00",
+        "endDateTime": "2026-03-30T18:00:00+00:00",
+        "location": "Gymbox Elephant and Castle",
+        "locationId": 1312517630,
+        "instructors": [
+          "Jai"
+        ],
+        "capacity": 18,
+        "booked": 0,
+        "spotsLeft": 18,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -8369,8 +8369,8 @@
           "Hester"
         ],
         "capacity": 16,
-        "booked": 1,
-        "spotsLeft": 15,
+        "booked": 5,
+        "spotsLeft": 11,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -8401,29 +8401,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1319849611,
-        "classId": 1274014897,
-        "className": "WOD Squad END",
-        "category": "Strength",
-        "description": "Testing your strength, building your skills as well as an intense sweat, WOD Squad is split into three styles of class to alternate each day, we\u2019re helping you vary your fitness journey with different physical and mental experiences to keep your workout fresh (even if you\u2019re not.) All about the long sweaty sesh? If you like functional training, look forward to skill work and love a good solid slog\u2026this endurance class won\u2019t fail to deliver. Dishing out a longer metcon to prolong the burn, there\u2019s minimal stopping once we start. Just a flat-out workout to get your t-shirt twice as heavy in half the time.",
-        "duration": 45,
-        "startDateTime": "2026-03-30T06:30:00+00:00",
-        "endDateTime": "2026-03-30T07:15:00+00:00",
-        "location": "Gymbox Farringdon",
-        "locationId": 1312510090,
-        "instructors": [
-          "Gysai"
-        ],
-        "capacity": 18,
-        "booked": 0,
-        "spotsLeft": 18,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-27T04:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1376823124,
         "classId": 1308119580,
         "className": "Float N Flow",
@@ -8447,6 +8424,29 @@
         "bookableUntil": null
       },
       {
+        "slotId": 1319849611,
+        "classId": 1274014897,
+        "className": "WOD Squad END",
+        "category": "Strength",
+        "description": "Testing your strength, building your skills as well as an intense sweat, WOD Squad is split into three styles of class to alternate each day, we\u2019re helping you vary your fitness journey with different physical and mental experiences to keep your workout fresh (even if you\u2019re not.) All about the long sweaty sesh? If you like functional training, look forward to skill work and love a good solid slog\u2026this endurance class won\u2019t fail to deliver. Dishing out a longer metcon to prolong the burn, there\u2019s minimal stopping once we start. Just a flat-out workout to get your t-shirt twice as heavy in half the time.",
+        "duration": 45,
+        "startDateTime": "2026-03-30T06:30:00+00:00",
+        "endDateTime": "2026-03-30T07:15:00+00:00",
+        "location": "Gymbox Farringdon",
+        "locationId": 1312510090,
+        "instructors": [
+          "Gysai"
+        ],
+        "capacity": 18,
+        "booked": 0,
+        "spotsLeft": 18,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-27T04:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
         "slotId": 1384191975,
         "classId": 1372055072,
         "className": "Reformer Pilat3s - Tone",
@@ -8461,8 +8461,8 @@
           "Hester"
         ],
         "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
+        "booked": 5,
+        "spotsLeft": 11,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -8493,29 +8493,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1384225885,
-        "classId": 1372015542,
-        "className": "Reformer Pilat3s - Align",
-        "category": "Holistic",
-        "description": "New to Reformer Pilates? ALIGN is a slower paced class where you\u2019ll get to grips with the reformer and master the moves, we\u2019re talking twists, open-rotations, and lengthening flows designed to loosen you up and tune you in. Ideal if you\u2019re tight, tense, or just need to reset and realign. Grip Socks are required.",
-        "duration": 60,
-        "startDateTime": "2026-03-30T11:00:00+00:00",
-        "endDateTime": "2026-03-30T12:00:00+00:00",
-        "location": "Gymbox Farringdon",
-        "locationId": 1312510090,
-        "instructors": [
-          "Hattie"
-        ],
-        "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-27T09:00:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1376833705,
         "classId": 1273966734,
         "className": "False Grip",
@@ -8539,22 +8516,45 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1376867826,
-        "classId": 1274014899,
-        "className": "Reppin'",
-        "category": "Sweat",
-        "description": "When it comes to lifting, we don\u2019t all like it heavy and slow. If it\u2019s plenty of pumping and a cranked up tempo that gets you going, these low-weight loads provide all the sweaty, sculpting, rep-fuelled rough n' tumble you need. It\u2019s impossible to not look in the mirror and feel yourself after this.",
+        "slotId": 1384225885,
+        "classId": 1372015542,
+        "className": "Reformer Pilat3s - Align",
+        "category": "Holistic",
+        "description": "New to Reformer Pilates? ALIGN is a slower paced class where you\u2019ll get to grips with the reformer and master the moves, we\u2019re talking twists, open-rotations, and lengthening flows designed to loosen you up and tune you in. Ideal if you\u2019re tight, tense, or just need to reset and realign. Grip Socks are required.",
+        "duration": 60,
+        "startDateTime": "2026-03-30T11:00:00+00:00",
+        "endDateTime": "2026-03-30T12:00:00+00:00",
+        "location": "Gymbox Farringdon",
+        "locationId": 1312510090,
+        "instructors": [
+          "Hattie"
+        ],
+        "capacity": 16,
+        "booked": 0,
+        "spotsLeft": 16,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-27T09:00:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1376865238,
+        "classId": 1274010756,
+        "className": "Contortion",
+        "category": "Holistic",
+        "description": "Big on backbends, focused on flexibility \u2013 it\u2019s yoga, but with a twist. Whether you\u2019re looking to build your strength, tone up for aerial or fulfil your dream of becoming a human pretzel, loosen up and let yourself go. You\u2019ll want to be in it for the long stretch.",
         "duration": 45,
         "startDateTime": "2026-03-30T12:00:00+00:00",
         "endDateTime": "2026-03-30T12:45:00+00:00",
         "location": "Gymbox Farringdon",
         "locationId": 1312510090,
         "instructors": [
-          "Caroline"
+          "Flavio"
         ],
-        "capacity": 22,
+        "capacity": 14,
         "booked": 0,
-        "spotsLeft": 22,
+        "spotsLeft": 14,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -8585,22 +8585,22 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1376865238,
-        "classId": 1274010756,
-        "className": "Contortion",
-        "category": "Holistic",
-        "description": "Big on backbends, focused on flexibility \u2013 it\u2019s yoga, but with a twist. Whether you\u2019re looking to build your strength, tone up for aerial or fulfil your dream of becoming a human pretzel, loosen up and let yourself go. You\u2019ll want to be in it for the long stretch.",
+        "slotId": 1376867826,
+        "classId": 1274014899,
+        "className": "Reppin'",
+        "category": "Sweat",
+        "description": "When it comes to lifting, we don\u2019t all like it heavy and slow. If it\u2019s plenty of pumping and a cranked up tempo that gets you going, these low-weight loads provide all the sweaty, sculpting, rep-fuelled rough n' tumble you need. It\u2019s impossible to not look in the mirror and feel yourself after this.",
         "duration": 45,
         "startDateTime": "2026-03-30T12:00:00+00:00",
         "endDateTime": "2026-03-30T12:45:00+00:00",
         "location": "Gymbox Farringdon",
         "locationId": 1312510090,
         "instructors": [
-          "Flavio"
+          "Caroline"
         ],
-        "capacity": 14,
+        "capacity": 22,
         "booked": 0,
-        "spotsLeft": 14,
+        "spotsLeft": 22,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -8990,8 +8990,8 @@
           "Lennie"
         ],
         "capacity": 16,
-        "booked": 2,
-        "spotsLeft": 14,
+        "booked": 11,
+        "spotsLeft": 5,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -9022,29 +9022,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1322923768,
-        "classId": 1274095200,
-        "className": "Bike & Beats",
-        "category": "Ride",
-        "description": "Bike & Beats is the class to make spin everyone\u2019s thing, with playlists to get you pumped, and climbs, sprints and jumps to seriously crank your cardio training up a gear. Whether you\u2019re more used to pushing pedals or pounding the dancefloor, you\u2019ll soon find your rhythm at this multicoloured mash up.",
-        "duration": 45,
-        "startDateTime": "2026-03-30T06:15:00+00:00",
-        "endDateTime": "2026-03-30T07:00:00+00:00",
-        "location": "Gymbox Finsbury Park",
-        "locationId": 1312525370,
-        "instructors": [
-          "Rory"
-        ],
-        "capacity": 25,
-        "booked": 0,
-        "spotsLeft": 25,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-27T04:15:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1322923722,
         "classId": 1274093791,
         "className": "Hyrox",
@@ -9059,8 +9036,31 @@
           "James"
         ],
         "capacity": 18,
-        "booked": 0,
-        "spotsLeft": 18,
+        "booked": 1,
+        "spotsLeft": 17,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-27T04:15:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1322923768,
+        "classId": 1274095200,
+        "className": "Bike & Beats",
+        "category": "Ride",
+        "description": "Bike & Beats is the class to make spin everyone\u2019s thing, with playlists to get you pumped, and climbs, sprints and jumps to seriously crank your cardio training up a gear. Whether you\u2019re more used to pushing pedals or pounding the dancefloor, you\u2019ll soon find your rhythm at this multicoloured mash up.",
+        "duration": 45,
+        "startDateTime": "2026-03-30T06:15:00+00:00",
+        "endDateTime": "2026-03-30T07:00:00+00:00",
+        "location": "Gymbox Finsbury Park",
+        "locationId": 1312525370,
+        "instructors": [
+          "Rory"
+        ],
+        "capacity": 25,
+        "booked": 4,
+        "spotsLeft": 21,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -9082,8 +9082,8 @@
           "Lennie"
         ],
         "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
+        "booked": 10,
+        "spotsLeft": 6,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -9105,8 +9105,8 @@
           "Jesse"
         ],
         "capacity": 18,
-        "booked": 0,
-        "spotsLeft": 18,
+        "booked": 1,
+        "spotsLeft": 17,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -9519,8 +9519,8 @@
           "Ophelie"
         ],
         "capacity": 14,
-        "booked": 0,
-        "spotsLeft": 14,
+        "booked": 2,
+        "spotsLeft": 12,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -9781,29 +9781,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1320008168,
-        "classId": 1317935140,
-        "className": "No Holds Barre",
-        "category": "Rhythm",
-        "description": "Don\u2019t let the tutu clich\u00e9s fool you: Barre is the tough ballet workout that\u2019ll hand you your derri\u00e8re on a plate. This floor barre class combines dynamic and static movements, isometric holds, core strengthening and stretching. Ensures to keep you on your toes \u2013 giving you a longer, leaner, stronger body and improved postural awareness. No ballet experience is needed",
-        "duration": 45,
-        "startDateTime": "2026-03-30T17:30:00+00:00",
-        "endDateTime": "2026-03-30T18:15:00+00:00",
-        "location": "Gymbox Holborn",
-        "locationId": 1312539010,
-        "instructors": [
-          "Teresa"
-        ],
-        "capacity": 14,
-        "booked": 0,
-        "spotsLeft": 14,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-27T15:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1320003673,
         "classId": 1274103910,
         "className": "Gassed",
@@ -9820,6 +9797,29 @@
         "capacity": 16,
         "booked": 0,
         "spotsLeft": 16,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-27T15:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1320008168,
+        "classId": 1317935140,
+        "className": "No Holds Barre",
+        "category": "Rhythm",
+        "description": "Don\u2019t let the tutu clich\u00e9s fool you: Barre is the tough ballet workout that\u2019ll hand you your derri\u00e8re on a plate. This floor barre class combines dynamic and static movements, isometric holds, core strengthening and stretching. Ensures to keep you on your toes \u2013 giving you a longer, leaner, stronger body and improved postural awareness. No ballet experience is needed",
+        "duration": 45,
+        "startDateTime": "2026-03-30T17:30:00+00:00",
+        "endDateTime": "2026-03-30T18:15:00+00:00",
+        "location": "Gymbox Holborn",
+        "locationId": 1312539010,
+        "instructors": [
+          "Teresa"
+        ],
+        "capacity": 14,
+        "booked": 0,
+        "spotsLeft": 14,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -9864,8 +9864,8 @@
           "Georgia"
         ],
         "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
+        "booked": 1,
+        "spotsLeft": 15,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -10034,29 +10034,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1319855931,
-        "classId": 1274096990,
-        "className": "Calisthenics",
-        "category": "Strength",
-        "description": "Incredible strength. Impeccable skill. Switching between progressive and regressive holds in Statics sessions and colossal conditioning circuits in Reps class, it\u2019s a programme to get you pushing and pulling your way to peak fitness. Show up, step up. Join the calisthenics movement.",
-        "duration": 45,
-        "startDateTime": "2026-03-30T17:30:00+00:00",
-        "endDateTime": "2026-03-30T18:15:00+00:00",
-        "location": "Gymbox Old Street",
-        "locationId": 1312512840,
-        "instructors": [
-          "Luca"
-        ],
-        "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-27T15:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1319860984,
         "classId": 1274014895,
         "className": "Floorplay",
@@ -10073,6 +10050,29 @@
         "capacity": 10,
         "booked": 0,
         "spotsLeft": 10,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-27T15:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1319855931,
+        "classId": 1274096990,
+        "className": "Calisthenics",
+        "category": "Strength",
+        "description": "Incredible strength. Impeccable skill. Switching between progressive and regressive holds in Statics sessions and colossal conditioning circuits in Reps class, it\u2019s a programme to get you pushing and pulling your way to peak fitness. Show up, step up. Join the calisthenics movement.",
+        "duration": 45,
+        "startDateTime": "2026-03-30T17:30:00+00:00",
+        "endDateTime": "2026-03-30T18:15:00+00:00",
+        "location": "Gymbox Old Street",
+        "locationId": 1312512840,
+        "instructors": [
+          "Luca"
+        ],
+        "capacity": 16,
+        "booked": 0,
+        "spotsLeft": 16,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -10103,29 +10103,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1319875983,
-        "classId": 1274010756,
-        "className": "Contortion",
-        "category": "Holistic",
-        "description": "Big on backbends, focused on flexibility \u2013 it\u2019s yoga, but with a twist. Whether you\u2019re looking to build your strength, tone up for aerial or fulfil your dream of becoming a human pretzel, loosen up and let yourself go. You\u2019ll want to be in it for the long stretch.",
-        "duration": 45,
-        "startDateTime": "2026-03-30T18:30:00+00:00",
-        "endDateTime": "2026-03-30T19:15:00+00:00",
-        "location": "Gymbox Old Street",
-        "locationId": 1312512840,
-        "instructors": [
-          "Francoise"
-        ],
-        "capacity": 10,
-        "booked": 0,
-        "spotsLeft": 10,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-27T16:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1319868886,
         "classId": 1273385390,
         "className": "Aerial Hoop",
@@ -10149,6 +10126,29 @@
         "bookableUntil": null
       },
       {
+        "slotId": 1319875983,
+        "classId": 1274010756,
+        "className": "Contortion",
+        "category": "Holistic",
+        "description": "Big on backbends, focused on flexibility \u2013 it\u2019s yoga, but with a twist. Whether you\u2019re looking to build your strength, tone up for aerial or fulfil your dream of becoming a human pretzel, loosen up and let yourself go. You\u2019ll want to be in it for the long stretch.",
+        "duration": 45,
+        "startDateTime": "2026-03-30T18:30:00+00:00",
+        "endDateTime": "2026-03-30T19:15:00+00:00",
+        "location": "Gymbox Old Street",
+        "locationId": 1312512840,
+        "instructors": [
+          "Francoise"
+        ],
+        "capacity": 10,
+        "booked": 0,
+        "spotsLeft": 10,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-27T16:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
         "slotId": 1409626602,
         "classId": 1372015541,
         "className": "Reformer Pilat3s - Power",
@@ -10163,8 +10163,8 @@
           "Jamie"
         ],
         "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
+        "booked": 6,
+        "spotsLeft": 10,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -10186,8 +10186,8 @@
           "Eleanor"
         ],
         "capacity": 20,
-        "booked": 0,
-        "spotsLeft": 20,
+        "booked": 1,
+        "spotsLeft": 19,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -10209,8 +10209,8 @@
           "Rory"
         ],
         "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
+        "booked": 2,
+        "spotsLeft": 14,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -10232,8 +10232,8 @@
           "Alan"
         ],
         "capacity": 22,
-        "booked": 0,
-        "spotsLeft": 22,
+        "booked": 1,
+        "spotsLeft": 21,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -10255,8 +10255,8 @@
           "Jamie"
         ],
         "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
+        "booked": 8,
+        "spotsLeft": 8,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -10278,8 +10278,8 @@
           "Stephanie"
         ],
         "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
+        "booked": 1,
+        "spotsLeft": 15,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -10701,29 +10701,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1319955249,
-        "classId": 1274009324,
-        "className": "Muay Thai",
-        "category": "Fight",
-        "description": "Looking to join a new boxing Kru? Say Sawa Dee to Muay Thai \u2013 high energy workout with all the sweatiness of those far Eastern shores. Pop on your pads and hop in the ring to work on defensive and offensive kicks, punches and clinches. It\u2019s definitely not for wimps. BYO Boxing gloves/bag mitts.",
-        "duration": 45,
-        "startDateTime": "2026-03-30T17:30:00+00:00",
-        "endDateTime": "2026-03-30T18:15:00+00:00",
-        "location": "Gymbox Victoria",
-        "locationId": 1312527970,
-        "instructors": [
-          "Steven To"
-        ],
-        "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-27T15:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1320478813,
         "classId": 1274014896,
         "className": "Gymnastic Conditioning",
@@ -10736,6 +10713,29 @@
         "locationId": 1312527970,
         "instructors": [
           "Sofia"
+        ],
+        "capacity": 16,
+        "booked": 0,
+        "spotsLeft": 16,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-27T15:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1319955249,
+        "classId": 1274009324,
+        "className": "Muay Thai",
+        "category": "Fight",
+        "description": "Looking to join a new boxing Kru? Say Sawa Dee to Muay Thai \u2013 high energy workout with all the sweatiness of those far Eastern shores. Pop on your pads and hop in the ring to work on defensive and offensive kicks, punches and clinches. It\u2019s definitely not for wimps. BYO Boxing gloves/bag mitts.",
+        "duration": 45,
+        "startDateTime": "2026-03-30T17:30:00+00:00",
+        "endDateTime": "2026-03-30T18:15:00+00:00",
+        "location": "Gymbox Victoria",
+        "locationId": 1312527970,
+        "instructors": [
+          "Steven To"
         ],
         "capacity": 16,
         "booked": 0,
@@ -10899,8 +10899,8 @@
           "Imogen"
         ],
         "capacity": 14,
-        "booked": 0,
-        "spotsLeft": 14,
+        "booked": 1,
+        "spotsLeft": 13,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -11230,29 +11230,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1321999150,
-        "classId": 1321344820,
-        "className": "Ashtanga Yoga",
-        "category": "Holistic",
-        "description": "Thought it was badass to lift weights? Imagine a workout so deep that even your breath feels the burn. For a more athletic, strength-based flow, work your way through postures that are dynamically synced with your every gasp. Holistic has never been so hardcore.",
-        "duration": 60,
-        "startDateTime": "2026-03-30T06:00:00+00:00",
-        "endDateTime": "2026-03-30T07:00:00+00:00",
-        "location": "Gymbox Westfield Stratford",
-        "locationId": 1312522220,
-        "instructors": [
-          "Jordan"
-        ],
-        "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-27T04:00:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1319830536,
         "classId": 1274095200,
         "className": "Bike & Beats",
@@ -11276,6 +11253,29 @@
         "bookableUntil": null
       },
       {
+        "slotId": 1321999150,
+        "classId": 1321344820,
+        "className": "Ashtanga Yoga",
+        "category": "Holistic",
+        "description": "Thought it was badass to lift weights? Imagine a workout so deep that even your breath feels the burn. For a more athletic, strength-based flow, work your way through postures that are dynamically synced with your every gasp. Holistic has never been so hardcore.",
+        "duration": 60,
+        "startDateTime": "2026-03-30T06:00:00+00:00",
+        "endDateTime": "2026-03-30T07:00:00+00:00",
+        "location": "Gymbox Westfield Stratford",
+        "locationId": 1312522220,
+        "instructors": [
+          "Jordan"
+        ],
+        "capacity": 16,
+        "booked": 2,
+        "spotsLeft": 14,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-27T04:00:00+00:00",
+        "bookableUntil": null
+      },
+      {
         "slotId": 1355917705,
         "classId": 1274093791,
         "className": "Hyrox",
@@ -11290,8 +11290,8 @@
           "Libby"
         ],
         "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
+        "booked": 1,
+        "spotsLeft": 15,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -11343,29 +11343,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1319843471,
-        "classId": 1274014899,
-        "className": "Reppin'",
-        "category": "Sweat",
-        "description": "When it comes to lifting, we don\u2019t all like it heavy and slow. If it\u2019s plenty of pumping and a cranked up tempo that gets you going, these low-weight loads provide all the sweaty, sculpting, rep-fuelled rough n' tumble you need. It\u2019s impossible to not look in the mirror and feel yourself after this.",
-        "duration": 45,
-        "startDateTime": "2026-03-30T12:00:00+00:00",
-        "endDateTime": "2026-03-30T12:45:00+00:00",
-        "location": "Gymbox Westfield Stratford",
-        "locationId": 1312522220,
-        "instructors": [
-          "Ryan"
-        ],
-        "capacity": 22,
-        "booked": 0,
-        "spotsLeft": 22,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-27T10:00:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1319844802,
         "classId": 1274014897,
         "className": "WOD Squad END",
@@ -11382,6 +11359,29 @@
         "capacity": 16,
         "booked": 0,
         "spotsLeft": 16,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-27T10:00:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1319843471,
+        "classId": 1274014899,
+        "className": "Reppin'",
+        "category": "Sweat",
+        "description": "When it comes to lifting, we don\u2019t all like it heavy and slow. If it\u2019s plenty of pumping and a cranked up tempo that gets you going, these low-weight loads provide all the sweaty, sculpting, rep-fuelled rough n' tumble you need. It\u2019s impossible to not look in the mirror and feel yourself after this.",
+        "duration": 45,
+        "startDateTime": "2026-03-30T12:00:00+00:00",
+        "endDateTime": "2026-03-30T12:45:00+00:00",
+        "location": "Gymbox Westfield Stratford",
+        "locationId": 1312522220,
+        "instructors": [
+          "Ryan"
+        ],
+        "capacity": 22,
+        "booked": 0,
+        "spotsLeft": 22,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -11596,29 +11596,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1319866533,
-        "classId": 1274014899,
-        "className": "Reppin'",
-        "category": "Sweat",
-        "description": "When it comes to lifting, we don\u2019t all like it heavy and slow. If it\u2019s plenty of pumping and a cranked up tempo that gets you going, these low-weight loads provide all the sweaty, sculpting, rep-fuelled rough n' tumble you need. It\u2019s impossible to not look in the mirror and feel yourself after this.",
-        "duration": 45,
-        "startDateTime": "2026-03-30T18:15:00+00:00",
-        "endDateTime": "2026-03-30T19:00:00+00:00",
-        "location": "Gymbox Westfield Stratford",
-        "locationId": 1312522220,
-        "instructors": [
-          "Diego"
-        ],
-        "capacity": 22,
-        "booked": 0,
-        "spotsLeft": 22,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-27T16:15:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1319863842,
         "classId": 1274014897,
         "className": "WOD Squad END",
@@ -11635,6 +11612,29 @@
         "capacity": 16,
         "booked": 0,
         "spotsLeft": 16,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-27T16:15:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1319866533,
+        "classId": 1274014899,
+        "className": "Reppin'",
+        "category": "Sweat",
+        "description": "When it comes to lifting, we don\u2019t all like it heavy and slow. If it\u2019s plenty of pumping and a cranked up tempo that gets you going, these low-weight loads provide all the sweaty, sculpting, rep-fuelled rough n' tumble you need. It\u2019s impossible to not look in the mirror and feel yourself after this.",
+        "duration": 45,
+        "startDateTime": "2026-03-30T18:15:00+00:00",
+        "endDateTime": "2026-03-30T19:00:00+00:00",
+        "location": "Gymbox Westfield Stratford",
+        "locationId": 1312522220,
+        "instructors": [
+          "Diego"
+        ],
+        "capacity": 22,
+        "booked": 0,
+        "spotsLeft": 22,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -12012,29 +12012,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1322154100,
-        "classId": 1274010756,
-        "className": "Contortion",
-        "category": "Holistic",
-        "description": "Big on backbends, focused on flexibility \u2013 it\u2019s yoga, but with a twist. Whether you\u2019re looking to build your strength, tone up for aerial or fulfil your dream of becoming a human pretzel, loosen up and let yourself go. You\u2019ll want to be in it for the long stretch.",
-        "duration": 45,
-        "startDateTime": "2026-03-31T17:30:00+00:00",
-        "endDateTime": "2026-03-31T18:15:00+00:00",
-        "location": "Gymbox Bank",
-        "locationId": 1312475490,
-        "instructors": [
-          "Ophelie"
-        ],
-        "capacity": 14,
-        "booked": 0,
-        "spotsLeft": 14,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-28T15:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1322154867,
         "classId": 1274103910,
         "className": "Gassed",
@@ -12051,6 +12028,29 @@
         "capacity": 16,
         "booked": 0,
         "spotsLeft": 16,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-28T15:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1322154100,
+        "classId": 1274010756,
+        "className": "Contortion",
+        "category": "Holistic",
+        "description": "Big on backbends, focused on flexibility \u2013 it\u2019s yoga, but with a twist. Whether you\u2019re looking to build your strength, tone up for aerial or fulfil your dream of becoming a human pretzel, loosen up and let yourself go. You\u2019ll want to be in it for the long stretch.",
+        "duration": 45,
+        "startDateTime": "2026-03-31T17:30:00+00:00",
+        "endDateTime": "2026-03-31T18:15:00+00:00",
+        "location": "Gymbox Bank",
+        "locationId": 1312475490,
+        "instructors": [
+          "Ophelie"
+        ],
+        "capacity": 14,
+        "booked": 0,
+        "spotsLeft": 14,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -12127,29 +12127,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1319894857,
-        "classId": 1274014893,
-        "className": "Hatha Yoga",
-        "category": "Holistic",
-        "description": "Reality kicking you where it hurts? Consider this your antidote to urban life. Through a deliciously slow and focused flow, we\u2019ll ease your body and rebalance your mind \u2013 while more challenging poses build your endurance and strength. This is yoga that anyone can try, so come and hatha go if you\u2019re calm enough.",
-        "duration": 45,
-        "startDateTime": "2026-03-31T06:30:00+00:00",
-        "endDateTime": "2026-03-31T07:15:00+00:00",
-        "location": "Gymbox Ealing",
-        "locationId": 1312500380,
-        "instructors": [
-          "Elliot"
-        ],
-        "capacity": 20,
-        "booked": 0,
-        "spotsLeft": 20,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-28T04:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1319892952,
         "classId": 1274096991,
         "className": "RowingWOD",
@@ -12166,6 +12143,29 @@
         "capacity": 10,
         "booked": 0,
         "spotsLeft": 10,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-28T04:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1319894857,
+        "classId": 1274014893,
+        "className": "Hatha Yoga",
+        "category": "Holistic",
+        "description": "Reality kicking you where it hurts? Consider this your antidote to urban life. Through a deliciously slow and focused flow, we\u2019ll ease your body and rebalance your mind \u2013 while more challenging poses build your endurance and strength. This is yoga that anyone can try, so come and hatha go if you\u2019re calm enough.",
+        "duration": 45,
+        "startDateTime": "2026-03-31T06:30:00+00:00",
+        "endDateTime": "2026-03-31T07:15:00+00:00",
+        "location": "Gymbox Ealing",
+        "locationId": 1312500380,
+        "instructors": [
+          "Elliot"
+        ],
+        "capacity": 20,
+        "booked": 0,
+        "spotsLeft": 20,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -12907,6 +12907,27 @@
         "bookableUntil": null
       },
       {
+        "slotId": 1322162474,
+        "classId": 1274018393,
+        "className": "Brazilian Jiu-Jitsu \u2013 No-Gi",
+        "category": "Fight",
+        "description": "Finding takedowns hard to grapple with? This ground-based class sacks off the Gi kit and forgoes the formalities of Brazilian Jiu Jitsu in favour of something that sits between self-defence and martial arts. The floor is yours.",
+        "duration": 60,
+        "startDateTime": "2026-03-31T17:30:00+00:00",
+        "endDateTime": "2026-03-31T18:30:00+00:00",
+        "location": "Gymbox Elephant and Castle",
+        "locationId": 1312517630,
+        "instructors": [],
+        "capacity": 14,
+        "booked": 0,
+        "spotsLeft": 14,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-28T15:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
         "slotId": 1353339649,
         "classId": 1273966732,
         "className": "Muay Thai Rookie",
@@ -12923,27 +12944,6 @@
         "capacity": 18,
         "booked": 0,
         "spotsLeft": 18,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-28T15:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
-        "slotId": 1322162474,
-        "classId": 1274018393,
-        "className": "Brazilian Jiu-Jitsu \u2013 No-Gi",
-        "category": "Fight",
-        "description": "Finding takedowns hard to grapple with? This ground-based class sacks off the Gi kit and forgoes the formalities of Brazilian Jiu Jitsu in favour of something that sits between self-defence and martial arts. The floor is yours.",
-        "duration": 60,
-        "startDateTime": "2026-03-31T17:30:00+00:00",
-        "endDateTime": "2026-03-31T18:30:00+00:00",
-        "location": "Gymbox Elephant and Castle",
-        "locationId": 1312517630,
-        "instructors": [],
-        "capacity": 14,
-        "booked": 0,
-        "spotsLeft": 14,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -13547,29 +13547,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1414287143,
-        "classId": 1274023122,
-        "className": "Muay Thai & Sparring",
-        "category": "Fight",
-        "description": "Ready to grapple with those mad Muay Thai skills you've been learning?\u00a0 Expect to be expertly guided through every technique and combo you need in a sparring session: from counters, defence, fakes and attacks to full-blown competition training. BYO:\u00a0 Boxing gloves, hand wraps, head guard, shin guards and mouth shield.",
-        "duration": 90,
-        "startDateTime": "2026-03-31T18:00:00+00:00",
-        "endDateTime": "2026-03-31T19:30:00+00:00",
-        "location": "Gymbox Farringdon",
-        "locationId": 1312510090,
-        "instructors": [
-          "Amro"
-        ],
-        "capacity": 20,
-        "booked": 0,
-        "spotsLeft": 20,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-28T16:00:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1414287741,
         "classId": 1274096992,
         "className": "Metcon",
@@ -13586,6 +13563,29 @@
         "capacity": 22,
         "booked": 0,
         "spotsLeft": 22,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-28T16:00:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1414287143,
+        "classId": 1274023122,
+        "className": "Muay Thai & Sparring",
+        "category": "Fight",
+        "description": "Ready to grapple with those mad Muay Thai skills you've been learning?\u00a0 Expect to be expertly guided through every technique and combo you need in a sparring session: from counters, defence, fakes and attacks to full-blown competition training. BYO:\u00a0 Boxing gloves, hand wraps, head guard, shin guards and mouth shield.",
+        "duration": 90,
+        "startDateTime": "2026-03-31T18:00:00+00:00",
+        "endDateTime": "2026-03-31T19:30:00+00:00",
+        "location": "Gymbox Farringdon",
+        "locationId": 1312510090,
+        "instructors": [
+          "Amro"
+        ],
+        "capacity": 20,
+        "booked": 0,
+        "spotsLeft": 20,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -13846,29 +13846,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1322968421,
-        "classId": 1274023120,
-        "className": "Invert Yourself",
-        "category": "Aerial",
-        "description": "It doesn\u2019t matter how experienced you are. This is where flexual deviants come to swing every which way and explore their every inversion. Release the tension. Discover your creative side. You know, there\u2019s a reason they call it playtime for adults. Please remove all jewellery beforehand.",
-        "duration": 45,
-        "startDateTime": "2026-03-31T12:00:00+00:00",
-        "endDateTime": "2026-03-31T12:45:00+00:00",
-        "location": "Gymbox Finsbury Park",
-        "locationId": 1312525370,
-        "instructors": [
-          "Hattie"
-        ],
-        "capacity": 11,
-        "booked": 0,
-        "spotsLeft": 11,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-28T10:00:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1322968031,
         "classId": 1274093793,
         "className": "Trilactic",
@@ -13885,6 +13862,29 @@
         "capacity": 12,
         "booked": 0,
         "spotsLeft": 12,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-28T10:00:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1322968421,
+        "classId": 1274023120,
+        "className": "Invert Yourself",
+        "category": "Aerial",
+        "description": "It doesn\u2019t matter how experienced you are. This is where flexual deviants come to swing every which way and explore their every inversion. Release the tension. Discover your creative side. You know, there\u2019s a reason they call it playtime for adults. Please remove all jewellery beforehand.",
+        "duration": 45,
+        "startDateTime": "2026-03-31T12:00:00+00:00",
+        "endDateTime": "2026-03-31T12:45:00+00:00",
+        "location": "Gymbox Finsbury Park",
+        "locationId": 1312525370,
+        "instructors": [
+          "Hattie"
+        ],
+        "capacity": 11,
+        "booked": 0,
+        "spotsLeft": 11,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -14053,29 +14053,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1322971852,
-        "classId": 1274014898,
-        "className": "Hyrox",
-        "category": "Sweat",
-        "description": "Engineered for endurance. Built for power. HYROX fuses functional strength with high-intensity cardio to push your limits every session. Whether you\u2019re fine-tuning for race day or throwing yourself into something new, expect serious graft, smart programming, and a session that demands everything you\u2019ve got.",
-        "duration": 90,
-        "startDateTime": "2026-03-31T17:30:00+00:00",
-        "endDateTime": "2026-03-31T19:00:00+00:00",
-        "location": "Gymbox Finsbury Park",
-        "locationId": 1312525370,
-        "instructors": [
-          "James"
-        ],
-        "capacity": 18,
-        "booked": 0,
-        "spotsLeft": 18,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-28T15:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1322971350,
         "classId": 1273966735,
         "className": "Kettlebell Club",
@@ -14088,6 +14065,29 @@
         "locationId": 1312525370,
         "instructors": [
           "Jamie"
+        ],
+        "capacity": 18,
+        "booked": 0,
+        "spotsLeft": 18,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-28T15:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1322971852,
+        "classId": 1274014898,
+        "className": "Hyrox",
+        "category": "Sweat",
+        "description": "Engineered for endurance. Built for power. HYROX fuses functional strength with high-intensity cardio to push your limits every session. Whether you\u2019re fine-tuning for race day or throwing yourself into something new, expect serious graft, smart programming, and a session that demands everything you\u2019ve got.",
+        "duration": 90,
+        "startDateTime": "2026-03-31T17:30:00+00:00",
+        "endDateTime": "2026-03-31T19:00:00+00:00",
+        "location": "Gymbox Finsbury Park",
+        "locationId": 1312525370,
+        "instructors": [
+          "James"
         ],
         "capacity": 18,
         "booked": 0,
@@ -15686,29 +15686,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1317936155,
-        "classId": 1274007059,
-        "className": "WOD Squad HVY",
-        "category": "Strength",
-        "description": "Testing your strength, building your skills as well as an intense sweat, WOD Squad is split into three styles of class to alternate each day, we\u2019re helping you vary your fitness journey with different physical and mental experiences to keep your workout fresh (even if you\u2019re not.) You\u2019ll know it\u2019s been a heavy day when you\u2019re feeling this emotional. In these sessions you\u2019ll need your head in the game, psyching yourself up for a big lift or a hard sprint interval \u2013 but that\u2019s just a small part of the whole thing. Expect to clang weights, bang barbells and rack up RPMs like you\u2019ve never done before.",
-        "duration": 45,
-        "startDateTime": "2026-03-31T18:30:00+00:00",
-        "endDateTime": "2026-03-31T19:15:00+00:00",
-        "location": "Gymbox Westfield London",
-        "locationId": 1312530570,
-        "instructors": [
-          "Lawrence"
-        ],
-        "capacity": 12,
-        "booked": 0,
-        "spotsLeft": 12,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-28T16:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1317935430,
         "classId": 1274014891,
         "className": "MMA",
@@ -15725,6 +15702,29 @@
         "capacity": 10,
         "booked": 0,
         "spotsLeft": 10,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-28T16:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1317936155,
+        "classId": 1274007059,
+        "className": "WOD Squad HVY",
+        "category": "Strength",
+        "description": "Testing your strength, building your skills as well as an intense sweat, WOD Squad is split into three styles of class to alternate each day, we\u2019re helping you vary your fitness journey with different physical and mental experiences to keep your workout fresh (even if you\u2019re not.) You\u2019ll know it\u2019s been a heavy day when you\u2019re feeling this emotional. In these sessions you\u2019ll need your head in the game, psyching yourself up for a big lift or a hard sprint interval \u2013 but that\u2019s just a small part of the whole thing. Expect to clang weights, bang barbells and rack up RPMs like you\u2019ve never done before.",
+        "duration": 45,
+        "startDateTime": "2026-03-31T18:30:00+00:00",
+        "endDateTime": "2026-03-31T19:15:00+00:00",
+        "location": "Gymbox Westfield London",
+        "locationId": 1312530570,
+        "instructors": [
+          "Lawrence"
+        ],
+        "capacity": 12,
+        "booked": 0,
+        "spotsLeft": 12,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -16077,29 +16077,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1385623628,
-        "classId": 1274095202,
-        "className": "Functional Bodybuilding",
-        "category": "Strength",
-        "description": "A wise Austrian terminator once said that the best activities for your health are pumping and humping. While we can only promise one of them, we\u2019re going to make sure that single rep is the best of your life.\u00a0 It\u2019s all about quality over quantity \u2013 nailing your movement and time under tension to build strength and technique.",
-        "duration": 45,
-        "startDateTime": "2026-03-31T18:00:00+00:00",
-        "endDateTime": "2026-03-31T18:45:00+00:00",
-        "location": "Gymbox Westfield Stratford",
-        "locationId": 1312522220,
-        "instructors": [
-          "Alison"
-        ],
-        "capacity": 12,
-        "booked": 0,
-        "spotsLeft": 12,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-28T16:00:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1319918335,
         "classId": 1273966733,
         "className": "Callback",
@@ -16116,6 +16093,29 @@
         "capacity": 16,
         "booked": 0,
         "spotsLeft": 16,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-28T16:00:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1385623628,
+        "classId": 1274095202,
+        "className": "Functional Bodybuilding",
+        "category": "Strength",
+        "description": "A wise Austrian terminator once said that the best activities for your health are pumping and humping. While we can only promise one of them, we\u2019re going to make sure that single rep is the best of your life.\u00a0 It\u2019s all about quality over quantity \u2013 nailing your movement and time under tension to build strength and technique.",
+        "duration": 45,
+        "startDateTime": "2026-03-31T18:00:00+00:00",
+        "endDateTime": "2026-03-31T18:45:00+00:00",
+        "location": "Gymbox Westfield Stratford",
+        "locationId": 1312522220,
+        "instructors": [
+          "Alison"
+        ],
+        "capacity": 12,
+        "booked": 0,
+        "spotsLeft": 12,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -18929,29 +18929,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1319990759,
-        "classId": 1273966735,
-        "className": "Kettlebell Club",
-        "category": "Strength",
-        "description": "More than a workout\u2014it\u2019s a skill, a mindset and a community. Strength, control, and mobility all come together in this class. Every lift, swing, and press is built on precision and progression, with the focus on moving well and getting stronger. Whether you're refining the basics or taking on advanced movements, you\u2019re in the right place.",
-        "duration": 45,
-        "startDateTime": "2026-04-01T11:00:00+00:00",
-        "endDateTime": "2026-04-01T11:45:00+00:00",
-        "location": "Gymbox Old Street",
-        "locationId": 1312512840,
-        "instructors": [
-          "Firas"
-        ],
-        "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-29T09:00:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1319994313,
         "classId": 1274018398,
         "className": "Rocket Yoga",
@@ -18968,6 +18945,29 @@
         "capacity": 10,
         "booked": 0,
         "spotsLeft": 10,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-29T09:00:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1319990759,
+        "classId": 1273966735,
+        "className": "Kettlebell Club",
+        "category": "Strength",
+        "description": "More than a workout\u2014it\u2019s a skill, a mindset and a community. Strength, control, and mobility all come together in this class. Every lift, swing, and press is built on precision and progression, with the focus on moving well and getting stronger. Whether you're refining the basics or taking on advanced movements, you\u2019re in the right place.",
+        "duration": 45,
+        "startDateTime": "2026-04-01T11:00:00+00:00",
+        "endDateTime": "2026-04-01T11:45:00+00:00",
+        "location": "Gymbox Old Street",
+        "locationId": 1312512840,
+        "instructors": [
+          "Firas"
+        ],
+        "capacity": 16,
+        "booked": 0,
+        "spotsLeft": 16,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -21022,29 +21022,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1319989527,
-        "classId": 1274023120,
-        "className": "Invert Yourself",
-        "category": "Aerial",
-        "description": "It doesn\u2019t matter how experienced you are. This is where flexual deviants come to swing every which way and explore their every inversion. Release the tension. Discover your creative side. You know, there\u2019s a reason they call it playtime for adults. Please remove all jewellery beforehand.",
-        "duration": 45,
-        "startDateTime": "2026-04-02T11:00:00+00:00",
-        "endDateTime": "2026-04-02T11:45:00+00:00",
-        "location": "Gymbox Ealing",
-        "locationId": 1312500380,
-        "instructors": [
-          "Annelise"
-        ],
-        "capacity": 10,
-        "booked": 0,
-        "spotsLeft": 10,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-30T09:00:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1319991363,
         "classId": 1274010757,
         "className": "Vinyasa Flow Yoga",
@@ -21068,26 +21045,26 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1319998207,
-        "classId": 1274014899,
-        "className": "Reppin'",
-        "category": "Sweat",
-        "description": "When it comes to lifting, we don\u2019t all like it heavy and slow. If it\u2019s plenty of pumping and a cranked up tempo that gets you going, these low-weight loads provide all the sweaty, sculpting, rep-fuelled rough n' tumble you need. It\u2019s impossible to not look in the mirror and feel yourself after this.",
+        "slotId": 1319989527,
+        "classId": 1274023120,
+        "className": "Invert Yourself",
+        "category": "Aerial",
+        "description": "It doesn\u2019t matter how experienced you are. This is where flexual deviants come to swing every which way and explore their every inversion. Release the tension. Discover your creative side. You know, there\u2019s a reason they call it playtime for adults. Please remove all jewellery beforehand.",
         "duration": 45,
-        "startDateTime": "2026-04-02T12:00:00+00:00",
-        "endDateTime": "2026-04-02T12:45:00+00:00",
+        "startDateTime": "2026-04-02T11:00:00+00:00",
+        "endDateTime": "2026-04-02T11:45:00+00:00",
         "location": "Gymbox Ealing",
         "locationId": 1312500380,
         "instructors": [
-          "Zoe"
+          "Annelise"
         ],
-        "capacity": 18,
+        "capacity": 10,
         "booked": 0,
-        "spotsLeft": 18,
+        "spotsLeft": 10,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
-        "bookableFrom": "2026-03-30T10:00:00+00:00",
+        "bookableFrom": "2026-03-30T09:00:00+00:00",
         "bookableUntil": null
       },
       {
@@ -21107,6 +21084,29 @@
         "capacity": 21,
         "booked": 0,
         "spotsLeft": 21,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-30T10:00:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1319998207,
+        "classId": 1274014899,
+        "className": "Reppin'",
+        "category": "Sweat",
+        "description": "When it comes to lifting, we don\u2019t all like it heavy and slow. If it\u2019s plenty of pumping and a cranked up tempo that gets you going, these low-weight loads provide all the sweaty, sculpting, rep-fuelled rough n' tumble you need. It\u2019s impossible to not look in the mirror and feel yourself after this.",
+        "duration": 45,
+        "startDateTime": "2026-04-02T12:00:00+00:00",
+        "endDateTime": "2026-04-02T12:45:00+00:00",
+        "location": "Gymbox Ealing",
+        "locationId": 1312500380,
+        "instructors": [
+          "Zoe"
+        ],
+        "capacity": 18,
+        "booked": 0,
+        "spotsLeft": 18,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -21206,29 +21206,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1320009395,
-        "classId": 1274009324,
-        "className": "Muay Thai",
-        "category": "Fight",
-        "description": "Looking to join a new boxing Kru? Say Sawa Dee to Muay Thai \u2013 high energy workout with all the sweatiness of those far Eastern shores. Pop on your pads and hop in the ring to work on defensive and offensive kicks, punches and clinches. It\u2019s definitely not for wimps. BYO Boxing gloves/bag mitts.",
-        "duration": 45,
-        "startDateTime": "2026-04-02T17:15:00+00:00",
-        "endDateTime": "2026-04-02T18:00:00+00:00",
-        "location": "Gymbox Ealing",
-        "locationId": 1312500380,
-        "instructors": [
-          "Samir Bouamrane"
-        ],
-        "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-30T15:15:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1445995573,
         "classId": 1274096990,
         "className": "Calisthenics",
@@ -21241,6 +21218,29 @@
         "locationId": 1312500380,
         "instructors": [
           "Cora"
+        ],
+        "capacity": 16,
+        "booked": 0,
+        "spotsLeft": 16,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-30T15:15:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1320009395,
+        "classId": 1274009324,
+        "className": "Muay Thai",
+        "category": "Fight",
+        "description": "Looking to join a new boxing Kru? Say Sawa Dee to Muay Thai \u2013 high energy workout with all the sweatiness of those far Eastern shores. Pop on your pads and hop in the ring to work on defensive and offensive kicks, punches and clinches. It\u2019s definitely not for wimps. BYO Boxing gloves/bag mitts.",
+        "duration": 45,
+        "startDateTime": "2026-04-02T17:15:00+00:00",
+        "endDateTime": "2026-04-02T18:00:00+00:00",
+        "location": "Gymbox Ealing",
+        "locationId": 1312500380,
+        "instructors": [
+          "Samir Bouamrane"
         ],
         "capacity": 16,
         "booked": 0,
@@ -21804,29 +21804,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1320057521,
-        "classId": 1274010756,
-        "className": "Contortion",
-        "category": "Holistic",
-        "description": "Big on backbends, focused on flexibility \u2013 it\u2019s yoga, but with a twist. Whether you\u2019re looking to build your strength, tone up for aerial or fulfil your dream of becoming a human pretzel, loosen up and let yourself go. You\u2019ll want to be in it for the long stretch.",
-        "duration": 45,
-        "startDateTime": "2026-04-02T18:30:00+00:00",
-        "endDateTime": "2026-04-02T19:15:00+00:00",
-        "location": "Gymbox Elephant and Castle",
-        "locationId": 1312517630,
-        "instructors": [
-          "Afiya"
-        ],
-        "capacity": 10,
-        "booked": 0,
-        "spotsLeft": 10,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-30T16:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1320062831,
         "classId": 1273966735,
         "className": "Kettlebell Club",
@@ -21843,6 +21820,29 @@
         "capacity": 16,
         "booked": 0,
         "spotsLeft": 16,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-30T16:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1320057521,
+        "classId": 1274010756,
+        "className": "Contortion",
+        "category": "Holistic",
+        "description": "Big on backbends, focused on flexibility \u2013 it\u2019s yoga, but with a twist. Whether you\u2019re looking to build your strength, tone up for aerial or fulfil your dream of becoming a human pretzel, loosen up and let yourself go. You\u2019ll want to be in it for the long stretch.",
+        "duration": 45,
+        "startDateTime": "2026-04-02T18:30:00+00:00",
+        "endDateTime": "2026-04-02T19:15:00+00:00",
+        "location": "Gymbox Elephant and Castle",
+        "locationId": 1312517630,
+        "instructors": [
+          "Afiya"
+        ],
+        "capacity": 10,
+        "booked": 0,
+        "spotsLeft": 10,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -21896,29 +21896,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1322982147,
-        "classId": 1308119580,
-        "className": "Float N Flow",
-        "category": "Aerial",
-        "description": "Elevate your body, calm your mind, and restore your energy. This Holistic Aerial class blends strength, stretch, and suspension to create space in the body and balance in the mind. Combing the strength and core focus of Pilates with the lengthening, restorative flow of yoga, you\u2019ll flow through movements that lift, lengthen, and release tension, leaving you grounded, lighter, and fully recharged. Please remove all jewellery beforehand. No experience required.",
-        "duration": 45,
-        "startDateTime": "2026-04-02T06:15:00+00:00",
-        "endDateTime": "2026-04-02T07:00:00+00:00",
-        "location": "Gymbox Farringdon",
-        "locationId": 1312510090,
-        "instructors": [
-          "Rory"
-        ],
-        "capacity": 14,
-        "booked": 0,
-        "spotsLeft": 14,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-30T04:15:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1322983198,
         "classId": 1274010754,
         "className": "Boxing",
@@ -21931,6 +21908,29 @@
         "locationId": 1312510090,
         "instructors": [
           "Solomon Wilson"
+        ],
+        "capacity": 14,
+        "booked": 0,
+        "spotsLeft": 14,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-30T04:15:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1322982147,
+        "classId": 1308119580,
+        "className": "Float N Flow",
+        "category": "Aerial",
+        "description": "Elevate your body, calm your mind, and restore your energy. This Holistic Aerial class blends strength, stretch, and suspension to create space in the body and balance in the mind. Combing the strength and core focus of Pilates with the lengthening, restorative flow of yoga, you\u2019ll flow through movements that lift, lengthen, and release tension, leaving you grounded, lighter, and fully recharged. Please remove all jewellery beforehand. No experience required.",
+        "duration": 45,
+        "startDateTime": "2026-04-02T06:15:00+00:00",
+        "endDateTime": "2026-04-02T07:00:00+00:00",
+        "location": "Gymbox Farringdon",
+        "locationId": 1312510090,
+        "instructors": [
+          "Rory"
         ],
         "capacity": 14,
         "booked": 0,
@@ -22034,29 +22034,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1322985459,
-        "classId": 1274023124,
-        "className": "Yoga for Lifting",
-        "category": "Holistic",
-        "description": "Whatever impact your training\u2019s had on your body, Yoga For Lifting makes the most of your motion by getting you stronger, stretchier and upping your range of movement. Whether it's for squats, cleans or overhead presses we'll get you hitting high and sinking low. One rep max PB here you come.",
-        "duration": 45,
-        "startDateTime": "2026-04-02T11:15:00+00:00",
-        "endDateTime": "2026-04-02T12:00:00+00:00",
-        "location": "Gymbox Farringdon",
-        "locationId": 1312510090,
-        "instructors": [
-          "Jessica"
-        ],
-        "capacity": 14,
-        "booked": 0,
-        "spotsLeft": 14,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-30T09:15:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1384259972,
         "classId": 1372015542,
         "className": "Reformer Pilat3s - Align",
@@ -22073,6 +22050,29 @@
         "capacity": 16,
         "booked": 0,
         "spotsLeft": 16,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-30T09:15:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1322985459,
+        "classId": 1274023124,
+        "className": "Yoga for Lifting",
+        "category": "Holistic",
+        "description": "Whatever impact your training\u2019s had on your body, Yoga For Lifting makes the most of your motion by getting you stronger, stretchier and upping your range of movement. Whether it's for squats, cleans or overhead presses we'll get you hitting high and sinking low. One rep max PB here you come.",
+        "duration": 45,
+        "startDateTime": "2026-04-02T11:15:00+00:00",
+        "endDateTime": "2026-04-02T12:00:00+00:00",
+        "location": "Gymbox Farringdon",
+        "locationId": 1312510090,
+        "instructors": [
+          "Jessica"
+        ],
+        "capacity": 14,
+        "booked": 0,
+        "spotsLeft": 14,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -22172,29 +22172,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1322986741,
-        "classId": 1274014899,
-        "className": "Reppin'",
-        "category": "Sweat",
-        "description": "When it comes to lifting, we don\u2019t all like it heavy and slow. If it\u2019s plenty of pumping and a cranked up tempo that gets you going, these low-weight loads provide all the sweaty, sculpting, rep-fuelled rough n' tumble you need. It\u2019s impossible to not look in the mirror and feel yourself after this.",
-        "duration": 45,
-        "startDateTime": "2026-04-02T16:30:00+00:00",
-        "endDateTime": "2026-04-02T17:15:00+00:00",
-        "location": "Gymbox Farringdon",
-        "locationId": 1312510090,
-        "instructors": [
-          "Ryan"
-        ],
-        "capacity": 22,
-        "booked": 0,
-        "spotsLeft": 22,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-30T14:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1346036580,
         "classId": 1274023120,
         "className": "Invert Yourself",
@@ -22211,6 +22188,29 @@
         "capacity": 10,
         "booked": 0,
         "spotsLeft": 10,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-30T14:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1322986741,
+        "classId": 1274014899,
+        "className": "Reppin'",
+        "category": "Sweat",
+        "description": "When it comes to lifting, we don\u2019t all like it heavy and slow. If it\u2019s plenty of pumping and a cranked up tempo that gets you going, these low-weight loads provide all the sweaty, sculpting, rep-fuelled rough n' tumble you need. It\u2019s impossible to not look in the mirror and feel yourself after this.",
+        "duration": 45,
+        "startDateTime": "2026-04-02T16:30:00+00:00",
+        "endDateTime": "2026-04-02T17:15:00+00:00",
+        "location": "Gymbox Farringdon",
+        "locationId": 1312510090,
+        "instructors": [
+          "Ryan"
+        ],
+        "capacity": 22,
+        "booked": 0,
+        "spotsLeft": 22,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -22883,29 +22883,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1321337236,
-        "classId": 1274095200,
-        "className": "Bike & Beats",
-        "category": "Ride",
-        "description": "Bike & Beats is the class to make spin everyone\u2019s thing, with playlists to get you pumped, and climbs, sprints and jumps to seriously crank your cardio training up a gear. Whether you\u2019re more used to pushing pedals or pounding the dancefloor, you\u2019ll soon find your rhythm at this multicoloured mash up.",
-        "duration": 45,
-        "startDateTime": "2026-04-02T06:30:00+00:00",
-        "endDateTime": "2026-04-02T07:15:00+00:00",
-        "location": "Gymbox Holborn",
-        "locationId": 1312539010,
-        "instructors": [
-          "Plum"
-        ],
-        "capacity": 19,
-        "booked": 0,
-        "spotsLeft": 19,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-30T04:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1321337916,
         "classId": 1274014894,
         "className": "Pilates",
@@ -22922,6 +22899,29 @@
         "capacity": 14,
         "booked": 0,
         "spotsLeft": 14,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-30T04:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1321337236,
+        "classId": 1274095200,
+        "className": "Bike & Beats",
+        "category": "Ride",
+        "description": "Bike & Beats is the class to make spin everyone\u2019s thing, with playlists to get you pumped, and climbs, sprints and jumps to seriously crank your cardio training up a gear. Whether you\u2019re more used to pushing pedals or pounding the dancefloor, you\u2019ll soon find your rhythm at this multicoloured mash up.",
+        "duration": 45,
+        "startDateTime": "2026-04-02T06:30:00+00:00",
+        "endDateTime": "2026-04-02T07:15:00+00:00",
+        "location": "Gymbox Holborn",
+        "locationId": 1312539010,
+        "instructors": [
+          "Plum"
+        ],
+        "capacity": 19,
+        "booked": 0,
+        "spotsLeft": 19,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -23136,29 +23136,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1320078901,
-        "classId": 1274014894,
-        "className": "Pilates",
-        "category": "Holistic",
-        "description": "Build the strength to smash life, without the incredible bulk. This is all about control: precise movements that stretch and tone to improve your posture, increase your flexibility and reinforce your core. You know what they say. Hit the mat and you\u2019ll never go back.",
-        "duration": 45,
-        "startDateTime": "2026-04-02T06:45:00+00:00",
-        "endDateTime": "2026-04-02T07:30:00+00:00",
-        "location": "Gymbox Old Street",
-        "locationId": 1312512840,
-        "instructors": [
-          "Teresa"
-        ],
-        "capacity": 10,
-        "booked": 0,
-        "spotsLeft": 10,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-30T04:45:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1320075760,
         "classId": 1274014897,
         "className": "WOD Squad END",
@@ -23175,6 +23152,29 @@
         "capacity": 16,
         "booked": 0,
         "spotsLeft": 16,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-30T04:45:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1320078901,
+        "classId": 1274014894,
+        "className": "Pilates",
+        "category": "Holistic",
+        "description": "Build the strength to smash life, without the incredible bulk. This is all about control: precise movements that stretch and tone to improve your posture, increase your flexibility and reinforce your core. You know what they say. Hit the mat and you\u2019ll never go back.",
+        "duration": 45,
+        "startDateTime": "2026-04-02T06:45:00+00:00",
+        "endDateTime": "2026-04-02T07:30:00+00:00",
+        "location": "Gymbox Old Street",
+        "locationId": 1312512840,
+        "instructors": [
+          "Teresa"
+        ],
+        "capacity": 10,
+        "booked": 0,
+        "spotsLeft": 10,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -23274,29 +23274,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1320103100,
-        "classId": 1274014899,
-        "className": "Reppin'",
-        "category": "Sweat",
-        "description": "When it comes to lifting, we don\u2019t all like it heavy and slow. If it\u2019s plenty of pumping and a cranked up tempo that gets you going, these low-weight loads provide all the sweaty, sculpting, rep-fuelled rough n' tumble you need. It\u2019s impossible to not look in the mirror and feel yourself after this.",
-        "duration": 45,
-        "startDateTime": "2026-04-02T17:30:00+00:00",
-        "endDateTime": "2026-04-02T18:15:00+00:00",
-        "location": "Gymbox Old Street",
-        "locationId": 1312512840,
-        "instructors": [
-          "Michaela"
-        ],
-        "capacity": 18,
-        "booked": 0,
-        "spotsLeft": 18,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-30T15:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1320101887,
         "classId": 1274095200,
         "className": "Bike & Beats",
@@ -23313,6 +23290,29 @@
         "capacity": 16,
         "booked": 0,
         "spotsLeft": 16,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-30T15:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1320103100,
+        "classId": 1274014899,
+        "className": "Reppin'",
+        "category": "Sweat",
+        "description": "When it comes to lifting, we don\u2019t all like it heavy and slow. If it\u2019s plenty of pumping and a cranked up tempo that gets you going, these low-weight loads provide all the sweaty, sculpting, rep-fuelled rough n' tumble you need. It\u2019s impossible to not look in the mirror and feel yourself after this.",
+        "duration": 45,
+        "startDateTime": "2026-04-02T17:30:00+00:00",
+        "endDateTime": "2026-04-02T18:15:00+00:00",
+        "location": "Gymbox Old Street",
+        "locationId": 1312512840,
+        "instructors": [
+          "Michaela"
+        ],
+        "capacity": 18,
+        "booked": 0,
+        "spotsLeft": 18,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -23343,29 +23343,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1320106767,
-        "classId": 1274023126,
-        "className": "Pole Tricks",
-        "category": "Rhythm",
-        "description": "They say strong is sexy, which is probably why pole dancing is fit AF. Discover the strength, toning and bruising it takes to climb, spin, invert and perform in this aerial-meets-gymnastics workout that werks you from head to toe. Sweating has never been so seductive.",
-        "duration": 60,
-        "startDateTime": "2026-04-02T18:30:00+00:00",
-        "endDateTime": "2026-04-02T19:30:00+00:00",
-        "location": "Gymbox Old Street",
-        "locationId": 1312512840,
-        "instructors": [
-          "Adelaide"
-        ],
-        "capacity": 9,
-        "booked": 0,
-        "spotsLeft": 9,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-30T16:30:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1320108640,
         "classId": 1274009328,
         "className": "Yin Yoga",
@@ -23382,6 +23359,29 @@
         "capacity": 10,
         "booked": 0,
         "spotsLeft": 10,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-30T16:30:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1320106767,
+        "classId": 1274023126,
+        "className": "Pole Tricks",
+        "category": "Rhythm",
+        "description": "They say strong is sexy, which is probably why pole dancing is fit AF. Discover the strength, toning and bruising it takes to climb, spin, invert and perform in this aerial-meets-gymnastics workout that werks you from head to toe. Sweating has never been so seductive.",
+        "duration": 60,
+        "startDateTime": "2026-04-02T18:30:00+00:00",
+        "endDateTime": "2026-04-02T19:30:00+00:00",
+        "location": "Gymbox Old Street",
+        "locationId": 1312512840,
+        "instructors": [
+          "Adelaide"
+        ],
+        "capacity": 9,
+        "booked": 0,
+        "spotsLeft": 9,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -23619,29 +23619,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1320080900,
-        "classId": 1274014893,
-        "className": "Hatha Yoga",
-        "category": "Holistic",
-        "description": "Reality kicking you where it hurts? Consider this your antidote to urban life. Through a deliciously slow and focused flow, we\u2019ll ease your body and rebalance your mind \u2013 while more challenging poses build your endurance and strength. This is yoga that anyone can try, so come and hatha go if you\u2019re calm enough.",
-        "duration": 45,
-        "startDateTime": "2026-04-02T12:15:00+00:00",
-        "endDateTime": "2026-04-02T13:00:00+00:00",
-        "location": "Gymbox Victoria",
-        "locationId": 1312527970,
-        "instructors": [
-          "Beko"
-        ],
-        "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-30T10:15:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1321252062,
         "classId": 1274103910,
         "className": "Gassed",
@@ -23654,6 +23631,29 @@
         "locationId": 1312527970,
         "instructors": [
           "Sofia"
+        ],
+        "capacity": 16,
+        "booked": 0,
+        "spotsLeft": 16,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-30T10:15:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1320080900,
+        "classId": 1274014893,
+        "className": "Hatha Yoga",
+        "category": "Holistic",
+        "description": "Reality kicking you where it hurts? Consider this your antidote to urban life. Through a deliciously slow and focused flow, we\u2019ll ease your body and rebalance your mind \u2013 while more challenging poses build your endurance and strength. This is yoga that anyone can try, so come and hatha go if you\u2019re calm enough.",
+        "duration": 45,
+        "startDateTime": "2026-04-02T12:15:00+00:00",
+        "endDateTime": "2026-04-02T13:00:00+00:00",
+        "location": "Gymbox Victoria",
+        "locationId": 1312527970,
+        "instructors": [
+          "Beko"
         ],
         "capacity": 16,
         "booked": 0,
@@ -23872,29 +23872,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1321248345,
-        "classId": 1274096990,
-        "className": "Calisthenics",
-        "category": "Strength",
-        "description": "Incredible strength. Impeccable skill. Switching between progressive and regressive holds in Statics sessions and colossal conditioning circuits in Reps class, it\u2019s a programme to get you pushing and pulling your way to peak fitness. Show up, step up. Join the calisthenics movement.",
-        "duration": 45,
-        "startDateTime": "2026-04-02T18:15:00+00:00",
-        "endDateTime": "2026-04-02T19:00:00+00:00",
-        "location": "Gymbox Victoria",
-        "locationId": 1312527970,
-        "instructors": [
-          "Luca"
-        ],
-        "capacity": 16,
-        "booked": 0,
-        "spotsLeft": 16,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-30T16:15:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1319965878,
         "classId": 1274023122,
         "className": "Muay Thai & Sparring",
@@ -23907,6 +23884,29 @@
         "locationId": 1312527970,
         "instructors": [
           "Abdul Mumin Yassine"
+        ],
+        "capacity": 16,
+        "booked": 0,
+        "spotsLeft": 16,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-30T16:15:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1321248345,
+        "classId": 1274096990,
+        "className": "Calisthenics",
+        "category": "Strength",
+        "description": "Incredible strength. Impeccable skill. Switching between progressive and regressive holds in Statics sessions and colossal conditioning circuits in Reps class, it\u2019s a programme to get you pushing and pulling your way to peak fitness. Show up, step up. Join the calisthenics movement.",
+        "duration": 45,
+        "startDateTime": "2026-04-02T18:15:00+00:00",
+        "endDateTime": "2026-04-02T19:00:00+00:00",
+        "location": "Gymbox Victoria",
+        "locationId": 1312527970,
+        "instructors": [
+          "Luca"
         ],
         "capacity": 16,
         "booked": 0,
@@ -23987,29 +23987,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1317955275,
-        "classId": 1274014899,
-        "className": "Reppin'",
-        "category": "Sweat",
-        "description": "When it comes to lifting, we don\u2019t all like it heavy and slow. If it\u2019s plenty of pumping and a cranked up tempo that gets you going, these low-weight loads provide all the sweaty, sculpting, rep-fuelled rough n' tumble you need. It\u2019s impossible to not look in the mirror and feel yourself after this.",
-        "duration": 45,
-        "startDateTime": "2026-04-02T11:15:00+00:00",
-        "endDateTime": "2026-04-02T12:00:00+00:00",
-        "location": "Gymbox Westfield London",
-        "locationId": 1312530570,
-        "instructors": [
-          "Abbie"
-        ],
-        "capacity": 10,
-        "booked": 0,
-        "spotsLeft": 10,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-30T09:15:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1317954724,
         "classId": 1274010757,
         "className": "Vinyasa Flow Yoga",
@@ -24026,6 +24003,29 @@
         "capacity": 14,
         "booked": 0,
         "spotsLeft": 14,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-30T09:15:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1317955275,
+        "classId": 1274014899,
+        "className": "Reppin'",
+        "category": "Sweat",
+        "description": "When it comes to lifting, we don\u2019t all like it heavy and slow. If it\u2019s plenty of pumping and a cranked up tempo that gets you going, these low-weight loads provide all the sweaty, sculpting, rep-fuelled rough n' tumble you need. It\u2019s impossible to not look in the mirror and feel yourself after this.",
+        "duration": 45,
+        "startDateTime": "2026-04-02T11:15:00+00:00",
+        "endDateTime": "2026-04-02T12:00:00+00:00",
+        "location": "Gymbox Westfield London",
+        "locationId": 1312530570,
+        "instructors": [
+          "Abbie"
+        ],
+        "capacity": 10,
+        "booked": 0,
+        "spotsLeft": 10,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -24125,29 +24125,6 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1317959989,
-        "classId": 1274096991,
-        "className": "RowingWOD",
-        "category": "Strength",
-        "description": "For full-body fitness, row is all you need to know. Dive in the deep end with a hardcore workout that tightens up your technique, perfects pacing and helps you unlock your body\u2019s natural biomechanical speed. Sure, we like to get a bit sciencey. But with expert instructors to guide you, you won\u2019t be without a paddle.",
-        "duration": 45,
-        "startDateTime": "2026-04-02T17:45:00+00:00",
-        "endDateTime": "2026-04-02T18:30:00+00:00",
-        "location": "Gymbox Westfield London",
-        "locationId": 1312530570,
-        "instructors": [
-          "Firas"
-        ],
-        "capacity": 8,
-        "booked": 0,
-        "spotsLeft": 8,
-        "waitingList": 0,
-        "maxWaitingList": 0,
-        "availability": "available",
-        "bookableFrom": "2026-03-30T15:45:00+00:00",
-        "bookableUntil": null
-      },
-      {
         "slotId": 1317960608,
         "classId": 1274009328,
         "className": "Yin Yoga",
@@ -24164,6 +24141,29 @@
         "capacity": 14,
         "booked": 0,
         "spotsLeft": 14,
+        "waitingList": 0,
+        "maxWaitingList": 0,
+        "availability": "available",
+        "bookableFrom": "2026-03-30T15:45:00+00:00",
+        "bookableUntil": null
+      },
+      {
+        "slotId": 1317959989,
+        "classId": 1274096991,
+        "className": "RowingWOD",
+        "category": "Strength",
+        "description": "For full-body fitness, row is all you need to know. Dive in the deep end with a hardcore workout that tightens up your technique, perfects pacing and helps you unlock your body\u2019s natural biomechanical speed. Sure, we like to get a bit sciencey. But with expert instructors to guide you, you won\u2019t be without a paddle.",
+        "duration": 45,
+        "startDateTime": "2026-04-02T17:45:00+00:00",
+        "endDateTime": "2026-04-02T18:30:00+00:00",
+        "location": "Gymbox Westfield London",
+        "locationId": 1312530570,
+        "instructors": [
+          "Firas"
+        ],
+        "capacity": 8,
+        "booked": 0,
+        "spotsLeft": 8,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -24447,22 +24447,22 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1320038596,
-        "classId": 1274023120,
-        "className": "Invert Yourself",
-        "category": "Aerial",
-        "description": "It doesn\u2019t matter how experienced you are. This is where flexual deviants come to swing every which way and explore their every inversion. Release the tension. Discover your creative side. You know, there\u2019s a reason they call it playtime for adults. Please remove all jewellery beforehand.",
-        "duration": 45,
+        "slotId": 1320036284,
+        "classId": 1274018393,
+        "className": "Brazilian Jiu-Jitsu \u2013 No-Gi",
+        "category": "Fight",
+        "description": "Finding takedowns hard to grapple with? This ground-based class sacks off the Gi kit and forgoes the formalities of Brazilian Jiu Jitsu in favour of something that sits between self-defence and martial arts. The floor is yours.",
+        "duration": 60,
         "startDateTime": "2026-04-02T17:00:00+00:00",
-        "endDateTime": "2026-04-02T17:45:00+00:00",
+        "endDateTime": "2026-04-02T18:00:00+00:00",
         "location": "Gymbox Westfield Stratford",
         "locationId": 1312522220,
         "instructors": [
-          "Jessica"
+          "Renato"
         ],
-        "capacity": 11,
+        "capacity": 20,
         "booked": 0,
-        "spotsLeft": 11,
+        "spotsLeft": 20,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
@@ -24493,22 +24493,22 @@
         "bookableUntil": null
       },
       {
-        "slotId": 1320036284,
-        "classId": 1274018393,
-        "className": "Brazilian Jiu-Jitsu \u2013 No-Gi",
-        "category": "Fight",
-        "description": "Finding takedowns hard to grapple with? This ground-based class sacks off the Gi kit and forgoes the formalities of Brazilian Jiu Jitsu in favour of something that sits between self-defence and martial arts. The floor is yours.",
-        "duration": 60,
+        "slotId": 1320038596,
+        "classId": 1274023120,
+        "className": "Invert Yourself",
+        "category": "Aerial",
+        "description": "It doesn\u2019t matter how experienced you are. This is where flexual deviants come to swing every which way and explore their every inversion. Release the tension. Discover your creative side. You know, there\u2019s a reason they call it playtime for adults. Please remove all jewellery beforehand.",
+        "duration": 45,
         "startDateTime": "2026-04-02T17:00:00+00:00",
-        "endDateTime": "2026-04-02T18:00:00+00:00",
+        "endDateTime": "2026-04-02T17:45:00+00:00",
         "location": "Gymbox Westfield Stratford",
         "locationId": 1312522220,
         "instructors": [
-          "Renato"
+          "Jessica"
         ],
-        "capacity": 20,
+        "capacity": 11,
         "booked": 0,
-        "spotsLeft": 20,
+        "spotsLeft": 11,
         "waitingList": 0,
         "maxWaitingList": 0,
         "availability": "available",
